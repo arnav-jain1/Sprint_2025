@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "d474e982e6ae0224",
+    "type": "split",
+    "children": [
+      {
+        "id": "622456335227530a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc155717f09dacae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "latex guide.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "latex guide"
+            }
+          },
+          {
+            "id": "b64487bfef479660",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "arch/1-27.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1-27"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2c27f070cb4a3e88",
+    "type": "split",
+    "children": [
+      {
+        "id": "91fb71495b985aa8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4810c2701c9efad1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "2596ca0e4a66a0f0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "de8bb0ccaa05855e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2bd8c422b56ee90f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd2687103f230784",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbcf58bd6e6c837f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "pl/1-23.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 1-23"
+            }
+          },
+          {
+            "id": "d50d52750972bd9c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "pl/1-23.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1-23"
+            }
+          },
+          {
+            "id": "7a2cb53835114aab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eca6c8b3c5456754",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "pl/1-23.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 1-23"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "b64487bfef479660",
+  "lastOpenFiles": [
+    "pl/1-23.md",
+    "arch/1-27.md",
+    "latex guide.md",
+    "comms/1-23.md",
+    "quantum/1-22.md",
+    "quantum",
+    "comms",
+    "arch",
+    "pl",
+    "465/!All.md",
+    "465/!Study Guide.md",
+    "465/6-Recon_(NMAP)_and_Vulnerabilities.md",
+    "330/notes/11-MST.md",
+    "330/notes/14-Dynamic Programming.md",
+    "330/notes/13-Greedy Algorithms.md",
+    "330/notes/12-Shortest Path.md",
+    "330/notes/10-Graphs.md",
+    "330/notes/9-Disjoint Sets.md",
+    "330/notes/8-Hashing.md",
+    "330/notes/7-BST.md",
+    "330/notes/6.1-Skip_List.md",
+    "330/notes/6-Data Structures.md",
+    "330/notes/5-Heapsort.md",
+    "330/notes/4-Randomized Algos.md",
+    "330/notes/3- Recurrence.md",
+    "330/notes/2-Asymptotic.md",
+    "330/notes/1-Sorting.md",
+    "330/notes/all.md",
+    "330/notes/!info.md",
+    "330/notes/Pasted image 20240505183842.png",
+    "330/notes/Pasted image 20240505183412.png",
+    "330/notes/Pasted image 20240505182958.png",
+    "330/notes/Pasted image 20240505181210.png",
+    "330/notes/Pasted image 20240505181058.png",
+    "330/notes/Pasted image 20240505181006.png",
+    "330/notes/Pasted image 20240505180701.png",
+    "330/notes/Pasted image 20240505180606.png",
+    "330/notes/Pasted image 20240505180531.png",
+    "330/notes/Pasted image 20240505180456.png",
+    "465/26-FIrewalls.md",
+    "468/daily_assignments/submissions/5-1.pdf",
+    "468/daily_assignments/5-1.pdf",
+    "468/daily_assignments/lu89248pm2w5.tmp",
+    "468/daily_assignments/5-1.txt~",
+    "468/ArnavJain_Assignment9/test.pdf",
+    "468/daily_assignments/4-28.txt"
+  ]
+}
