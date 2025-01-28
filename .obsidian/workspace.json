@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arch/1-27.md",
+                "file": "pl/1-23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1-27"
+              "title": "1-23"
             }
           }
         ],
@@ -179,10 +179,10 @@
   },
   "active": "b64487bfef479660",
   "lastOpenFiles": [
-    "pl/1-23.md",
+    "comms/Chapter 1.md",
     "arch/1-27.md",
+    "pl/1-23.md",
     "latex guide.md",
-    "comms/1-23.md",
     "quantum/1-22.md",
     "quantum",
     "comms",
