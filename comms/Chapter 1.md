@@ -1,3 +1,6 @@
+# Intro
+~31b IoT devices and ~10b non IoT (smartphones)
+Video traffic takes up a lot of the total traffic
 # Chapter 1
 ## Network
 The building blocks of networks are nodes and links
@@ -43,6 +46,7 @@ Network protocol is a way to respond to certain messages
 ## Internet
 The outside of the network is edge that's like computers that run the apps
 	Hosts are the end systems
+Packet switches forward packets (data chunks)
 Network core are the interior that forward packets and data (router and switches)
 
 Communication links: fiber, copper, radio, satiliite
@@ -95,10 +99,15 @@ The global ISPs there are many and to connect them there needs to be IXPs (inter
 	IXPs are literal physical buildings where ISPs connect to each other
 
 Then, there are also smaller regional ISP
+![[Pasted image 20250129124230.png]]
+Then there are content provider networks that bring the services closer to you
+
+## Internet structure
+Tier 1 commercial ISPs are stuff like ATT, Verizon that provide coverage
+Content provider networks are private networks that connect the data center to the internet
 ## Network Edge
 
-I played geoguessr oops
-
+Edge is the end users, the once connected to the internet
 
 ## Network Core
 Multiplexing: Sharing a resource among multippe users 
