@@ -1,4 +1,5 @@
 Raw:
+
 traceroute to ee.stanford.edu (171.67.72.13), 30 hops max, 60 byte packets
  1  10.108.255.253 (10.108.255.253)  11.248 ms  11.176 ms  11.149 ms  11.130 ms  11.110 ms  11.093 ms * * * *
  2  1-2-18.comp-dr-01.net.ku.edu (129.237.32.141)  10.983 ms  10.963 ms  11.005 ms  10.988 ms  10.970 ms  10.952 ms * * * *

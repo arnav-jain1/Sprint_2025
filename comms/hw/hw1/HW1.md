@@ -11,9 +11,11 @@
 		802.11ax (Wifi 6) is the fastest and is up to 10x faster than Wifi 5. It also operates on both freq
 		https://www.fs.com/blog/80211-wireless-standards-explained-35.html
 	c) Wired networks are generally faster with higher bandwidth but usually have less devices connected (wiring becomes a pain) but are usually more reliable. A wired network is like a server that needs the ultrafast and reliable speeds. Wireless networks usually have many devices connected at once and they are much easier to set up. An example being a school network where guests and students want to connect
-1. 
+2. a 
+	a) Layered approaches have a multitude of benefits including increased modularity, allowing different protocols to be made without having to redesign the full system, it standardizes the system and makes things essentially plug and play, it provides seperation of concerns where some layers are conserned about some things and it doesn't matter as much for others, and more. We interact with the application layer the most.
+	b) Without standardized protocols, it would make it really hard to communicate as someone may be on a different protocol and would create numerous incompatibilities because device A will send it in one way but device B won't know how to handle it. 
 
-2. 
+3. 
 	a) A circuit switching network dedicates a physical path between the source and the destination. The entire bandwidth is reserved. Packet switching is when the data is split up into "packets" where the packets are all traveling independent of one another but all end at the same point. Packet switching is better for more bursty traffic where there are periods of nothing happening because resources aren't being wasted. It is worse when it gets overwhelmed because the packets get queued which delays their arrival and then packets can get lost. Circuit switching on the otherhand will consume resources when not busy but the pro is that you are guaranteed latency because it will take a certain amount of time for the data to travel that route 
 	Source: https://apposite-tech.com/packet-switching-vs-circuit-switching/
 	b) The network edge refers to the endpoints of a network. The network edge consists of devices that want to connect with and use the internet. Examples include my computer, a smart fridge, my phone, etc. The network core is how data is passed and includes the infrastructure and middlepoints needed to connect 2 edge devices. This includes intermediary servers to pass packets (like CDNs), routers, firewalls, network towers, etc.

@@ -22,6 +22,7 @@ traceroute to ee.stanford.edu (171.67.72.13), 30 hops max, 60 byte packets
 
 
 Cleaned:
+
 Hop     IP Address              Average Latency (ms)    Standard Deviation (ms) Data points
 1       10.109.127.252          2.515                   0.436                   6
 2       129.237.32.147          2.572                   0.023                   6
