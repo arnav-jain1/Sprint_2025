@@ -1,42 +1,4 @@
-import re
-import numpy as np
-
-def parse_traceroute_output(output):
-    # Regular expression to match each hop line
-    results = []
-
-    output = output.splitlines()
-    output = output[2:]
-
-
-    for line in output:
-
-        ip = None
-        times = []
-        for match in re.finditer(r"\(((?:\d{1,3}\.){3}\d{1,3})\)|(\d+\.\d+)(?= ms)", line):
-            if match.group(1):
-                ip = match.group(1)
-            elif match.group(2):
-                times.append(float(match.group(2).strip()))
-
-        results.append((ip, times))
-
-    return results
-
-def calculate_stats(results):
-    stats = []
-    for ip, latencies in results:
-        if latencies:  # Only calculate if there are valid latencies
-            avg = np.mean(latencies)
-            std_dev = np.std(latencies)
-            stats.append((ip, avg, std_dev, len(latencies)))
-        else:
-            stats.append((ip, None, None, 0))  # No valid latencies
-    return stats
-
-def main():
-    # Example traceroute output (replace this with your actual output)
-    traceroute_output = """
+Raw:
 traceroute to ee.stanford.edu (171.67.72.13), 30 hops max, 60 byte packets
  1  10.108.255.253 (10.108.255.253)  11.248 ms  11.176 ms  11.149 ms  11.130 ms  11.110 ms  11.093 ms * * * *
  2  1-2-18.comp-dr-01.net.ku.edu (129.237.32.141)  10.983 ms  10.963 ms  11.005 ms  10.988 ms  10.970 ms  10.952 ms * * * *
@@ -55,23 +17,24 @@ traceroute to ee.stanford.edu (171.67.72.13), 30 hops max, 60 byte packets
 15  137.164.26.241 (137.164.26.241)  48.115 ms  46.311 ms  48.091 ms  48.079 ms  48.066 ms  48.055 ms  46.820 ms  46.769 ms  46.750 ms  46.731 ms
 16  csee-west-rtr-vl12.SUNet (171.66.0.238)  46.709 ms  46.692 ms  44.078 ms  44.031 ms  44.007 ms  43.989 ms  43.971 ms  48.171 ms  48.138 ms  48.123 ms
 17  * ee.stanford.edu (171.67.72.13)  48.093 ms  45.808 ms  45.762 ms  45.743 ms  45.725 ms  45.709 ms  45.692 ms  43.888 ms  43.838 ms
-    """
 
-    # Parse the traceroute output
-    results = parse_traceroute_output(traceroute_output)
-    print(results)
 
-    # Calculate average and standard deviation for each hop
-    stats = calculate_stats(results)
-
-    # Print the results
-    print("Hop\tIP Address\t\tAverage Latency (ms)\tStandard Deviation (ms)\tData points")
-    for i, (ip, avg, std_dev, size) in enumerate(stats, start=1):
-        if ip:
-            if avg is not None and std_dev is not None:
-                print(f"{i}\t{ip}\t\t{avg:.3f}\t\t\t{std_dev:.3f}\t\t\t{size}")
-            else:
-                print(f"{i}\t{ip}\t\tNo valid latencies")
-
-if __name__ == "__main__":
-    main()
+Cleaned:
+Hop     IP Address              Average Latency (ms)    Standard Deviation (ms) Data points
+1       10.108.255.253          11.151                  0.051                   6
+2       129.237.32.141          10.977                  0.017                   6
+3       129.237.2.133           3.804                   0.370                   10
+4       10.110.6.14             4.323                   0.172                   10
+5       164.113.216.5           5.787                   1.420                   10
+6       164.113.193.114         6.368                   2.464                   10
+7       64.57.28.177            7.759                   1.064                   10
+8       163.253.1.250           49.563                  3.177                   10
+9       163.253.1.169           46.362                  2.446                   10
+10      163.253.1.186           47.849                  1.425                   10
+11      163.253.1.191           45.573                  0.499                   10
+12      163.253.1.24            44.743                  0.559                   10
+13      137.164.26.126          45.082                  0.030                   10
+14      137.164.25.95           44.934                  1.169                   10
+15      137.164.26.241          47.379                  0.715                   10
+16      171.66.0.238            45.791                  1.845                   10
+17      171.67.72.13            45.584                  1.173                   9

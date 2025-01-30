@@ -119,7 +119,7 @@ Multiplexing: Sharing a resource among multippe users
 **Fundemental question:** How is data transferred through the network?
 	Circuit switching: dedicated resource allocation
 	Packet switching: 
-Circuit switching is when you allocate resources (either freq or time) for a communication between networks. No one else can use the resource, it is "dedicated", ineffecient for burst or anything with inactivity, like a call
+Circuit switching is when you allocate resources (either freq or time) for a communication between networks. No one else can use the resource, it is "dedicated", ineffecient for burst or anything with inactivity, like a call but good because guarenteed
 
 Packet switching: Hosts break application layer messages into packets where the packets are interleaved between users
 	Users share network and send packets, each packet uses full bandwidth 
@@ -132,4 +132,7 @@ The issue with this is that the amount of packets being sent can be more than th
 
 
 Entire packet has to arrive at router before it can be transmitted
+	Called Store and forward
 This begs the question, how many bits is the right number? why 1500
+
+
