@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comms/Chapter 1.md",
+                "file": "arch/Lec 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 1"
+              "title": "Lec 4"
             }
           }
         ],
@@ -193,13 +193,17 @@
   },
   "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "arch/Lec 3.md",
+    "arch/Lec 4.md",
+    "arch/Pasted image 20250203115230.png",
+    "arch/Pasted image 20250203115128.png",
+    "comms/Chapter 1.md",
     "comms/hw/hw1/HW1.md",
     "comms/hw/hw1/school_9am.txt~",
     "comms/hw/hw1/school_12pm.txt~",
     "comms/hw/hw1/school_2pm.txt~",
     "comms/hw/hw1/program.py~",
     "comms/hw/hw1/school_12pm.txt",
-    "comms/Chapter 1.md",
     "comms/hw/hw1/school_9am.txt",
     "comms/hw/hw1/Pasted image 20250129135758.png",
     "comms/hw/hw1/school_2pm.txt",
@@ -208,17 +212,14 @@
     "comms/hw",
     "comms/Pasted image 20250129135642.png",
     "comms/Pasted image 20250129124230.png",
-    "arch/Lec 3.md",
     "arch/Pasted image 20250129104356.png",
     "arch/Lec 2.md",
     "arch/Pasted image 20250129104222.png",
     "arch/Pasted image 20250129103919.png",
     "arch/Pasted image 20250129103843.png",
     "arch/Pasted image 20250129103639.png",
-    "arch/Pasted image 20250129103512.png",
     "latex guide.md",
     "arch/Lec 1.md",
-    "arch/Pasted image 20250129102152.png",
     "pl/1-23.md",
     "quantum/1-22.md",
     "465/!All.md",
@@ -236,7 +237,6 @@
     "330/notes/6-Data Structures.md",
     "330/notes/5-Heapsort.md",
     "330/notes/4-Randomized Algos.md",
-    "330/notes/3- Recurrence.md",
-    "330/notes/2-Asymptotic.md"
+    "330/notes/3- Recurrence.md"
   ]
 }
