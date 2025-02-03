@@ -1,0 +1,11 @@
+traceroute to ee.stanford.edu (171.67.72.13), 30 hops max, 60 byte packets
+ 1  router.home.local (192.168.1.1)  1.613 ms  1.515 ms  1.485 ms  1.461 ms  1.438 ms  1.415 ms * * * *
+ 2  10.9.84.1 (10.9.84.1)  2.637 ms  2.614 ms  2.574 ms  2.550 ms  2.527 ms  3.264 ms * * * *
+ 3  50.115.149.97 (50.115.149.97)  4.198 ms  4.175 ms  4.075 ms  4.049 ms  4.026 ms  4.003 ms  4.758 ms  4.736 ms  2.635 ms  2.572 ms
+ 4  * * * * * * * * * *
+ 5  * * * * * * * * * *
+ 6  100ge0-54.core3.sjc2.he.net (184.105.64.69)  42.028 ms * * * * * * * * *
+ 7  * * * * * * * * * *
+ 8  stanford-university.e0-62.core2.pao1.he.net (184.105.177.238)  41.329 ms  41.307 ms  41.285 ms  41.263 ms  41.240 ms  41.104 ms  41.019 ms  40.990 ms  40.966 ms  40.941 ms
+ 9  csee-west-rtr-vl12.SUNet (171.66.0.238)  40.647 ms  40.556 ms  40.528 ms  40.503 ms  40.478 ms  40.793 ms  40.700 ms  40.671 ms  40.645 ms  40.622 ms
+10  ee.stanford.edu (171.67.72.13)  40.561 ms  40.755 ms  40.637 ms  40.599 ms  40.573 ms  40.550 ms  40.820 ms  40.704 ms  40.618 ms  40.588 ms
