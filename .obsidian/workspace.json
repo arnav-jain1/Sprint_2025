@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arch/Lec 4.md",
+                "file": "comms/Chapter 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lec 4"
+              "title": "Chapter 2"
             }
           }
         ],
@@ -193,11 +193,12 @@
   },
   "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
-    "arch/Lec 3.md",
+    "comms/Chapter 1.md",
+    "comms/Chapter 2.md",
     "arch/Lec 4.md",
+    "arch/Lec 3.md",
     "arch/Pasted image 20250203115230.png",
     "arch/Pasted image 20250203115128.png",
-    "comms/Chapter 1.md",
     "comms/hw/hw1/HW1.md",
     "comms/hw/hw1/school_9am.txt~",
     "comms/hw/hw1/school_12pm.txt~",

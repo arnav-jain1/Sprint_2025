@@ -136,3 +136,9 @@ Entire packet has to arrive at router before it can be transmitted
 This begs the question, how many bits is the right number? why 1500
 
 
+
+## Network layer
+There are several layers to the network that each do their own job 
+The message starts from the Application layer which is where
+
+The process of adding layers and different information to the packet is called encapsulation 
