@@ -31,3 +31,4 @@
 	![[Pasted image 20250129135642.png]]
 	a) yes it reached with 18 total hops
 	b) `sudo traceroute -I ee.stanford.edu -q 10`
+	c) I have the code and the results in the folder. Overall, doing it from home had less hops which I was actually surprised by. I figured since there is more traffic at school it would have better routing but I guess it is the opposite
