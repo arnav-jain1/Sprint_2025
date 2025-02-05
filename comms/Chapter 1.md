@@ -135,10 +135,54 @@ Entire packet has to arrive at router before it can be transmitted
 	Called Store and forward
 This begs the question, how many bits is the right number? why 1500
 
+## Performance
+Packet switching allows more users bc it doesnt consume bandwidth when not useful
+
+Packets have a delay on end-to-end paths with 4 sources at each hop
+	nodal processing ($d_{proc}$): Checks for bit errors at router, determine output link, usually <1ms
+	queueing delay ($d_{queue}$): Time waiting at output link for transmission (how long a packet waits in the queue until it's sent), depends on congestion
+	transmission delay ($d_{trans}$): equal to $\frac{\text{packet length}}{\text{transmission rate}}$ 
+	propogation delay ($d_{prop}$): time it takes to travel through the cord, equal to $\frac{\text{Length of physical link}}{\text{Propogation speed}}$ 
+
+Packet loss occurs if the arrival rate of packets (in bps) is more than the transmission rate (in bps) of the router
+	Packets get queued to be sent and and are lost if the queue (in memory) can't hold any more
+
+Packet queuing delay: 
+	R = link bandwidth (bps)
+	L = packet length (bits)
+	a = average packet arrival rate (bps)
+	If $\frac{Ra}{L} \approx 0$ then small delay
+	If $\frac{Ra}{L} \approx 1$ then large delay
+	If $\frac{Ra}{L} > 1$ then more packets arriving than can be serviced, infinite delay with packet loss
 
 
-## Network layer
-There are several layers to the network that each do their own job 
-The message starts from the Application layer which is where
+Traceroute shows the delay from the source to every router that a packet travels 
+	Sends 3 packets to each router and measueres time between sent and reply
 
-The process of adding layers and different information to the packet is called encapsulation 
+Throughput: transfer size/ time to transfer
+	Essentially, information (bits, bytes) over some time unit
+	Usually averaged 
+	pretty much the bandwidth percieved 
+	Instant throughput: rate at a given time
+	Average throughput: rate over a time period
+
+Bottleneck link is the part of the path (link) that limits the end-end throughput 
+	Slowest link dominates
+
+
+## IP Stack
+Application: Network applications like http (send an http request)
+Transport: data transfer protocols (UDP/TCP)
+Network: Routing datagrams from source to destination (IP)
+Link: data transfer between people on same network
+Physical: bits on the wire
+
+The application layer has the message itself
+The transport layer adds a header called the segment
+Network layer adds another header with the full thing called a datagram
+Link layer adds the last layer called the frame
+
+![[Pasted image 20250205124421.png]]
+
+
+## 
