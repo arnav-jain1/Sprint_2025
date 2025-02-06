@@ -46,3 +46,33 @@ Performance requirements:
 	Low delay
 	Minimum throughput
 	Encryption
+
+# Transport protocol 
+Transmission control protocol (TCP) and User Datagram Protocol (UDP)
+
+## TCP
+**Connection oriented: setup between client and server**
+Reliable packet transport: No-loss, in-order delivery
+Flow contro: Sender doesn't overwhelm the reciever
+Congestion control: Sender wont overwhelm the network
+No guarantees on delay and throughput
+
+## UDP
+Designed for shorter packets for when it doesn't matter as much if one packet is dropped
+Unreliable data transfer: No security, reliability (no confirmation packet reached), timing
+Quick and dirty
+Setup is not required 
+
+
+## HTTP
+APplication layer protocol 
+Client/server model
+	Client: Browser that requests, receives, and displays web objects
+	server: sends objects in response to the requests (with HTTP)
+HTTP request followed by HTTP response 
+
+Uses TCP
+	Client initiates connection (creates socket) to server
+	Server accepts TCP connection from client
+	Once established, allowed to send messages between the 2
+

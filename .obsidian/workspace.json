@@ -48,21 +48,9 @@
               "icon": "lucide-file",
               "title": "Chapter 2"
             }
-          },
-          {
-            "id": "852c23c87b982569",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -204,8 +192,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "852c23c87b982569",
+  "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "comms/Chapter 2.md",
     "comms/Chapter 1.md",
     "comms/Pasted image 20250205124421.png",
     "arch/Lec 4.md",
@@ -221,7 +210,6 @@
     "comms/hw/hw1/home_12pm.txt~",
     "comms/hw/hw1/home_4pm.txt",
     "comms/hw/hw1/home_12pm.txt",
-    "comms/Chapter 2.md",
     "arch/Lec 3.md",
     "arch/Pasted image 20250203115230.png",
     "arch/Pasted image 20250203115128.png",
