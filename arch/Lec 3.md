@@ -49,7 +49,7 @@ Decoding 0xC3A9
 	Convert it to binary: 11000011 10101001
 	Then 2 byte uses the pattern 110xxxxx 10xxxxxx
 	So then it bcomes 00011 101001 = 00011101001= 223 = E9
-	E9 is **é** so that is the char
+		E9 is **é** so that is the char
 
 
 
