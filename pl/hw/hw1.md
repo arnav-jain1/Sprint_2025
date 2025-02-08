@@ -18,3 +18,5 @@
 7 (a) 4/4
 1 (a, b, c) 4/4
 2 (a, b) 4/4
+
+For transitive, must show why it is divisible (ie x-y=6a, y-z=6b x-z=6(a+b))
