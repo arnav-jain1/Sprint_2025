@@ -13,10 +13,11 @@
 
 
 
-2 (c, e) 4/4
-6 (a, b) 4/4
-7 (a) 4/4
-1 (a, b, c) 4/4
-2 (a, b) 4/4
+10 5/5
+14 5/5
+21 5/5
+28 5/5
+32 5/5
+
 
 For transitive, must show why it is divisible (ie x-y=6a, y-z=6b x-z=6(a+b))
