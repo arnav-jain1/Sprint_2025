@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pl/hw/hw1.md",
+                "file": "arch/Lec 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hw1"
+              "title": "Lec 5"
             }
           }
         ],
@@ -194,11 +194,16 @@
   },
   "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
-    "arch/Lec 3.md",
+    "arch/Pasted image 20250210104248.png",
+    "arch/Pasted image 20250210103813.png",
+    "arch/Pasted image 20250210102850.png",
+    "arch/Pasted image 20250210102016.png",
+    "arch/Lec 4.md",
+    "arch/Lec 5.md",
     "pl/hw/hw1.md",
+    "arch/Lec 3.md",
     "pl/hw",
     "arch/Lec 2.md",
-    "arch/Lec 4.md",
     "pl/1-23.md",
     "comms/Chapter 2.md",
     "comms/Chapter 1.md",
@@ -219,9 +224,6 @@
     "comms/hw/hw1/Pasted image 20250129135758.png",
     "comms/Pasted image 20250129135642.png",
     "comms/Pasted image 20250129124230.png",
-    "arch/Pasted image 20250129104356.png",
-    "arch/Pasted image 20250129104222.png",
-    "arch/Pasted image 20250129103919.png",
     "latex guide.md",
     "arch/Lec 1.md",
     "quantum/1-22.md",
@@ -237,8 +239,6 @@
     "330/notes/8-Hashing.md",
     "330/notes/7-BST.md",
     "330/notes/6.1-Skip_List.md",
-    "330/notes/6-Data Structures.md",
-    "330/notes/5-Heapsort.md",
-    "330/notes/4-Randomized Algos.md"
+    "330/notes/6-Data Structures.md"
   ]
 }

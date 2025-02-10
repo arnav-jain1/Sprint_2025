@@ -13,11 +13,3 @@
 
 
 
-1.1.10a 5/5
-1.2.6 5/5
-1.3.12a 5/5
-1.5.24 5/5
-1.6.2 5/5
-
-
-For transitive, must show why it is divisible (ie x-y=6a, y-z=6b x-z=6(a+b))
