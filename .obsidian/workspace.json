@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arch/Lec 5.md",
+                "file": "pl/hw/hw1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lec 5"
+              "title": "hw1"
             }
           }
         ],
@@ -194,17 +194,17 @@
   },
   "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "pl/1-23.md",
+    "arch/Lec 5.md",
     "arch/Pasted image 20250210104248.png",
     "arch/Pasted image 20250210103813.png",
     "arch/Pasted image 20250210102850.png",
     "arch/Pasted image 20250210102016.png",
     "arch/Lec 4.md",
-    "arch/Lec 5.md",
     "pl/hw/hw1.md",
     "arch/Lec 3.md",
     "pl/hw",
     "arch/Lec 2.md",
-    "pl/1-23.md",
     "comms/Chapter 2.md",
     "comms/Chapter 1.md",
     "comms/Pasted image 20250205124421.png",
@@ -223,7 +223,6 @@
     "arch/Pasted image 20250203115128.png",
     "comms/hw/hw1/Pasted image 20250129135758.png",
     "comms/Pasted image 20250129135642.png",
-    "comms/Pasted image 20250129124230.png",
     "latex guide.md",
     "arch/Lec 1.md",
     "quantum/1-22.md",
