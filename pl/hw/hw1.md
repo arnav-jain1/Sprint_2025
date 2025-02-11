@@ -1,6 +1,6 @@
 13)
 	1) 3.5.12, 3.5.8, 3.5.7
-	2) 3.5.12 stays valid with no proof changes, 3.5.7/8 stay valid with no proof changes because they are about reducing something that can't be reduced. 3.5.4. 3.5.11 depends on the language itself. The theorem will stay valid if the program is stateless but will have to change the proof. If the language has state then it is no longer valid
+	2) 3.5.12 stays valid with no proof changes, 3.5.7/8 stay valid with no proof changes because they are about reducing something that can't be reduced. 3.5.11 depends on the language itself. The theorem will stay valid if the language is stateless but will have to change the proof. If the language has state then it is no longer valid. The other one is invalid
 14)
 	Does not apply for E-PredSucc, E-PredZero, E-IsZeroZero, E-IsZeroSucc since they use values
 	E-Succ:

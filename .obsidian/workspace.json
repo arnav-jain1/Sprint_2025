@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comms/Chapter 2.md",
+                "file": "pl/hw/hw1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 2"
+              "title": "hw1"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,12 +192,13 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a47ea4b44c7dc059",
+  "active": "4f0309964b54a54e",
   "lastOpenFiles": [
+    "pl/hw/hw1.md",
+    "comms/Chapter 2.md",
     "comms/Pasted image 20250211103515.png",
     "comms/Pasted image 20250211101547.png",
     "comms/Pasted image 20250211101524.png",
-    "pl/hw/hw1.md",
     "pl/1-23.md",
     "comms/Chapter 1.md",
     "latex guide.md",
@@ -210,7 +211,6 @@
     "arch/Lec 3.md",
     "pl/hw",
     "arch/Lec 2.md",
-    "comms/Chapter 2.md",
     "comms/Pasted image 20250205124421.png",
     "arch/Pasted image 20250205101710.png",
     "comms/hw/hw1/HW1.md",
@@ -224,7 +224,6 @@
     "comms/hw/hw1/home_4pm.txt",
     "comms/hw/hw1/home_12pm.txt",
     "arch/Pasted image 20250203115230.png",
-    "arch/Pasted image 20250203115128.png",
     "arch/Lec 1.md",
     "quantum/1-22.md",
     "465/!All.md",
