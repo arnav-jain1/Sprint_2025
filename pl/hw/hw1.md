@@ -14,7 +14,7 @@
 	Therefore by induction hypothesis, $\text{if } t_{1} \rightarrow t_{1}' \text{ and } t_{1} \rightarrow t_{1}''$ then $t_{1}' == t_{1}''$
 	 
 16)
-	Intuition: The two statements agree because lets say that you have a statement `if nat t1 t2`, this would stall because there is no rule to apply to simplify this down so it would cause the language to malfunction. Likewise, `if badbool t1 t2` evaluates to wrong which gives the user the same info as the language stalling. So in essence, both ways of handling incorrect behavior tell the user the same information so they "agree"
+	Intuition: The two statements agree because lets say that you have a statement `if nat t1 t2`, this would stall because there is no rule to apply to simplify this down (it is in normal form) so it would cause the language to malfunction. Likewise, `if badbool t1 t2` evaluates to wrong (which is also normal form) which gives the user the same info as the language stalling. So in essence, both ways of handling incorrect behavior tell the user the same information by reducing to a normal form so they "agree"
 	Proof:
 	$$\frac{\text{if Nat} \space t_{1}\space t_{2} \rightarrow \text{if Nat} \space t_{1}\space t_{2}}{\text{if badbool} \space t_{1}\space t_{2} \rightarrow \text{wrong}}$$
 	Likewise
@@ -27,7 +27,8 @@
 18)
 	There are a couple changes that need to be made. The original if else rule needs to be deleted (EIf) and this rule needs to be added
 	$$\frac{t_{2} \rightarrow t_{2}' \quad t_{1} \rightarrow t_{1}' \quad t_{0} \rightarrow t_{0}'}{\text{if } t_{0} \space t_{1} \space t_{2} \rightarrow\text{if } t_{0}' \space t_{1}' \space t_{2}' }\text{IfNew}$$
-	If inference rules are evaluated in order, if not
+	If inference rules are evaluated in order, if not \[Redact this part since I just found out that they aren't]
 	$$\frac{t_{2} \rightarrow v_{2}}{\text{if } t_{0} \space t_{1} \space t_{2} \rightarrow\text{if } t_{0} \space t_{1} \space v_{2}} \frac{t_{1} \rightarrow v_{1}}{\text{if } t_{0} \space t_{1} \space v_{2} \rightarrow \text{if } t_{0} \space v_{1} \space v_{2} } \frac{t_{0} \rightarrow v_{0}}{\text{if } t_{0} \space v_{1} \space v_{2} \rightarrow \text{if } v_{0} \space v_{1} \space v_{2} }$$
+	$\text{Where } v_{n} \text{ are values}$
 
 
