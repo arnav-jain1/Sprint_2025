@@ -2,7 +2,17 @@
 	1) 3.5.12, 3.5.8, 3.5.7
 	2) 3.5.12 stays valid with no proof changes, 3.5.7/8 stay valid with no proof changes because they are about reducing something that can't be reduced. 3.5.4. 3.5.11 depends on the language itself. The theorem will stay valid if the program is stateless but will have to change the proof. If the language has state then it is no longer valid
 14)
-	
+	Does not apply for E-PredSucc, E-PredZero, E-IsZeroZero, E-IsZeroSucc since they use values
+	E-Succ:
+		If $t_{1} \rightarrow nv$ only one rule applies
+	E-Pred:
+		If $t_{1} \rightarrow 0$ only one rule applies
+		If $t_{1} \rightarrow nv$ only one rule applies
+	E-IsZero:
+		If $t_{1} \rightarrow 0$ only one rule applies
+		If $t_{1} \rightarrow nv$ only one rule applies
+	Therefore by induction hypothesis, $\text{if } t_{1} \rightarrow t_{1}' \text{ and } t_{1} \rightarrow t_{1}''$ then $t_{1}' == t_{1}''$
+	 
 16)
 	Intuition: The two statements agree because lets say that you have a statement `if nat t1 t2`, this would stall because there is no rule to apply to simplify this down so it would cause the language to malfunction. Likewise, `if badbool t1 t2` evaluates to wrong which gives the user the same info as the language stalling. So in essence, both ways of handling incorrect behavior tell the user the same information so they "agree"
 	Proof:
