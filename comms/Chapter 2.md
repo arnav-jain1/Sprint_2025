@@ -195,3 +195,8 @@ SMTP
 	More like a push than a pull (HTTP)
 	Both HTTP and SMTP use ASCII
 	Multiple objects in same (multipart) message
+	persisetent connections
+
+Message format: 
+	Header lines with subject, to, from, etc
+	Body with message
