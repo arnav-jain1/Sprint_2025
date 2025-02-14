@@ -5,6 +5,11 @@
 	c) $\approx 3113$ 
 	![[Pasted image 20250213140640.png]]
 3. 
-	10k bits = .01 mb / 1 = .001s = 10 ms + 1 ms delay = 11ms 
-	.01 mb / 2 = .005s = 5ms + 2ms = 7ms
-	7ms + 11ms = 18ms
+	a)
+		10k bits = .01 mb / 1mbps = .01s = 10 ms + 1 ms delay = 11ms 
+		.01 mb / 2mbps = .005s = 5ms + 2ms delay = 7ms
+		7ms + 11ms = 18ms
+	b) 
+		1k bits = .001 mb / 1mbps = .001s = 1 ms + 1 ms delay = 2ms 
+		.001 mb / 2mbps = .0005s = 0.5ms + 2ms delay = 2.5ms
+		2+2.5+9 * 1 since we only care about when the last packet reaches = 13.5

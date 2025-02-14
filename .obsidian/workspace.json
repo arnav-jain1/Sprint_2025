@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,8 +192,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "8c2927035409d196",
+  "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "pl/2-Untyped Lambda Calc.md",
     "latex guide.md",
     "comms/hw/hw2.md",
     "comms/hw/Pasted image 20250213140640.png",
@@ -203,7 +204,6 @@
     "arch/Lec 1.md",
     "arch/Lec 5.md",
     "arch/Lec 4.md",
-    "pl/2-Untyped Lambda Calc.md",
     "pl/hw/hw1.md",
     "pl/hw/hw1.pdf",
     "pl/1- Intro.md",
