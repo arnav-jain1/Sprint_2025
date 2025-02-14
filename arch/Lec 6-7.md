@@ -79,5 +79,43 @@ R type doesn't work well for load and store so I type used (2 registers)
 	rs = 18
 	rt = 8
 	offset = 32
+
+# Lec 7
+
+### Signed loads
+Some instructions like lbu and lh load one byte or half the reg respectively. THey fill the rest with 0s. The issue is that this does not keep the sign the same.
+	Signed versions and unsigned versions (lb and lbu) exist to fix this issue
+
+Small constants are used a lot 
+	i = i + 5
+Instead of loading the val to a register and then adding the two registers, we can just add immediate  which is faster
+
+Make the common case fast
+
+Logical operations are also very important and exist in mips
+![[Pasted image 20250214101351.png]]
+	Note that shift left and right are r-type but with one src operand (use the shamt)
+
+Shift left is the same as multiplying by 2 so shift left n = $* 2^{n}$ (unless MSB is lost)
+Shift right is the same but div
+
+
+### Branching
+MIPS also has branching such as beq (branch if equal) or bne (branch if not equal)
+Example:
+	`if (i==j) h = i+j`
+	`bne $s0 $s1 LABEL` This will jump to LABEL if they are not equal
+	`add $s3 $0 $s1`
+	`j EXIT` This is for the else part
+	`LABEL: ...`
+	`...`
+	`EXIT: ...`
 	
-	
+### Loops
+
+![[Pasted image 20250214102546.png]]
+	The first line shifts the i left twice (so mult by 4) and stores in t1. This is for getting how much we will have to jump from base
+	Line 2 gets the address of save\[i] 
+	Line 3 loads the value at the address
+	Line 4 checks to see if they are not equal. If they aren't equal then jump to exit otherwise continue
+	Line 5 adds 1 to our i value and then we repeat
