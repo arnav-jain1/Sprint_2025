@@ -70,3 +70,41 @@ $$\frac{t_{1} \rightarrow t_{1}'}{t_{1} \space t_{2} \rightarrow t_{1}' \space t
 $$\frac{}{((\lambda x, t_{12}) v_{2}) \rightarrow [x \rightarrow v_{2}]t_{12}}$$ This is call by value because v2 is already a value ( it got evaluated by the rule before it)
 
 For call by name, remove LambdaT2 and change v2 to t2
+
+$((\lambda x, (\lambda y.x \space y))(\lambda z.z\space z))(\lambda w.w)$ 
+$\Rightarrow (\lambda y .(\lambda z.z\space z) y)(\lambda w.w)$ 
+$\Rightarrow (\lambda z.z\space z)(\lambda w.w)$ 
+$\Rightarrow (\lambda w.w) (\lambda w.w)$ 
+$\Rightarrow (\lambda w.w)$
+This is currying woo!
+
+
+The **o m e g a c o m b i n a t o r**
+$(\lambda x.x \space x)(\lambda x.x \space x)$ 
+$\Rightarrow [x \rightarrow (\lambda x.x \space x)](x \ x)$    
+
+### Church Booleans
+true = $\lambda x . \lambda y. x$ 
+false = $\lambda x. \lambda y . y$ 
+	
+and = $\lambda x . \lambda y . x \ y \ x$ 
+And true true = 
+	$(((\lambda x . \lambda y . x \ y \ x) \lambda x . \lambda y. x) \lambda x . \lambda y. x)$  
+	$\Rightarrow ( \lambda y . (\lambda x . \lambda y. x) \ y \ (\lambda x . \lambda y. x)) \lambda x . \lambda y. x$  
+	$\Rightarrow (\lambda x . \lambda y. x) \ \lambda x . \lambda y. x \ (\lambda x . \lambda y. x)$     
+	$\Rightarrow (\lambda y. \lambda x . \lambda y. x) (\lambda x . \lambda y. x)$     
+	$\Rightarrow (\lambda x . \lambda y. x) (\lambda x . \lambda y. x)$     Because no y
+	$\Rightarrow  \lambda y. \lambda x . \lambda y. x$     
+	$\Rightarrow \lambda x . \lambda y. x$     Because no y
+	$\Rightarrow true$ 
+
+
+And true false = 
+	$(((\lambda x . \lambda y . x \ y \ x) \lambda x . \lambda y. x) \lambda x . \lambda y. y)$  
+	$\Rightarrow ( \lambda y . (\lambda x . \lambda y. x) \ y \ (\lambda x . \lambda y. x)) \lambda x . \lambda y. y$  
+	$\Rightarrow (\lambda x . \lambda y. x) \ \lambda x . \lambda y. x \ (\lambda x . \lambda y. y)$     
+	$\Rightarrow (\lambda y. \lambda x . \lambda y. x) (\lambda x . \lambda y. y)$     
+	$\Rightarrow (\lambda x . \lambda y. x) (\lambda x . \lambda y. y)$     Because no y
+	$\Rightarrow  \lambda y. \lambda x . \lambda y. y$     
+	$\Rightarrow \lambda x . \lambda y. y$     Because no y
+	$\Rightarrow false$ 
