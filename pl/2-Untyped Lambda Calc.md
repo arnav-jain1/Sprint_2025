@@ -88,6 +88,10 @@ true = $\lambda x . \lambda y. x$
 false = $\lambda x. \lambda y . y$ 
 	
 and = $\lambda x . \lambda y . x \ y \ x$ 
+or $\lambda x . \lambda y . x \ x \ y$ 
+not $\lambda x . x \ \text{false} \ \text{true}$ 
+
+
 And true true = 
 	$(((\lambda x . \lambda y . x \ y \ x) \lambda x . \lambda y. x) \lambda x . \lambda y. x)$  
 	$\Rightarrow ( \lambda y . (\lambda x . \lambda y. x) \ y \ (\lambda x . \lambda y. x)) \lambda x . \lambda y. x$  
