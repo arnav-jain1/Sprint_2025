@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comms/hw/hw2.md",
+                "file": "arch/Lec 8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hw2"
+              "title": "Lec 8"
             }
           },
           {
@@ -194,13 +194,18 @@
   },
   "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "arch/Pasted image 20250217104321.png",
+    "arch/Lec 6-7.md",
+    "arch/Lec 8.md",
+    "arch/Pasted image 20250217103433.png",
+    "arch/Pasted image 20250217102803.png",
+    "arch/Pasted image 20250217102800.png",
+    "comms/hw/hw2.md",
     "comms/hw/hw2.pdf",
     "comms/hw/Pasted image 20250214203837.png",
-    "arch/Lec 6-7.md",
     "arch/Pasted image 20250214102546.png",
     "arch/Pasted image 20250214101351.png",
     "arch/Lec 4.md",
-    "comms/hw/hw2.md",
     "pl/2-Untyped Lambda Calc.md",
     "latex guide.md",
     "comms/hw/Pasted image 20250213140640.png",
@@ -215,9 +220,6 @@
     "comms/Pasted image 20250211101547.png",
     "comms/Pasted image 20250211101524.png",
     "comms/Chapter 1.md",
-    "arch/Pasted image 20250210104248.png",
-    "arch/Pasted image 20250210103813.png",
-    "arch/Pasted image 20250210102850.png",
     "pl/hw",
     "comms/hw/hw1/HW1.md",
     "comms/hw/hw1.zip",
@@ -227,7 +229,6 @@
     "comms/hw/hw1/program.py~",
     "comms/hw/hw1/home_6pm.txt~",
     "comms/hw/hw1/home_12pm.txt~",
-    "comms/hw/hw1/home_4pm.txt",
     "quantum/1-22.md",
     "465/!All.md",
     "465/!Study Guide.md",
@@ -238,7 +239,6 @@
     "330/notes/12-Shortest Path.md",
     "330/notes/10-Graphs.md",
     "330/notes/9-Disjoint Sets.md",
-    "330/notes/8-Hashing.md",
-    "330/notes/7-BST.md"
+    "330/notes/8-Hashing.md"
   ]
 }

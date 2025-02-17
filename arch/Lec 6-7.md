@@ -119,3 +119,34 @@ Example:
 	Line 3 loads the value at the address
 	Line 4 checks to see if they are not equal. If they aren't equal then jump to exit otherwise continue
 	Line 5 adds 1 to our i value and then we repeat
+
+slt: Set on less than 
+`slt r1 r2 r3`
+	If r2 < r3, r1=1 else r1=0
+set on greater than is useless
+
+## Signed numbers
+Different instructions for signed vs unsigned 
+Example of before where lbu loads 8 bits and fills with 0 always (unsigned) while lb does the same but will fill with 1 if the MSB=1
+
+slt assumes both numbers are signed while sltu exists for unsigned
+![[Pasted image 20250217102803.png]]
+t0 = 1
+t1 = 0
+
+## Detecting overflow
+Detecting overflow requires extra instructions but can be good
+	If detected, then exception (interrupt) called
+Can be added to only signed operations because thats when they are the most likely
+
+If both operands are same sign, then occurs $\iff$ result has opposite sign
+
+![[Pasted image 20250217103433.png]]
+Line 1: Add both
+2: checks the sign of the 2 being added, if different then overflow is possible (t3=0)
+Line 3 Checks if t3 is equal to 0, if it is then overflow possible
+Line 4 checks the signs of the sum
+Line 5 does the same thing as line 3
+Line 6 is the final check to see if all 3 signs are the same or not
+
+
