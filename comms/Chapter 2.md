@@ -202,4 +202,5 @@ Message format:
 	Body with message
 
 
-## DNS 
+## DNS Domain name system
+When typing in a url we dont type the IP address we type a name like "eecs" 

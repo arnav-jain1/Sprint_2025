@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arch/Lec 3.md",
+                "file": "comms/Chapter 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lec 3"
+              "title": "Chapter 2"
             }
           }
         ],
@@ -194,6 +194,7 @@
   },
   "active": "8c2927035409d196",
   "lastOpenFiles": [
+    "arch/Lec 3.md",
     "comms/Chapter 2.md",
     "pl/2-Untyped Lambda Calc.md",
     "pl/hw/hw2.md",
@@ -212,7 +213,6 @@
     "arch/Lec 4.md",
     "latex guide.md",
     "comms/hw/Pasted image 20250213140640.png",
-    "arch/Lec 3.md",
     "arch/Lec 2.md",
     "pl/hw/hw1.md",
     "pl/hw/hw1.pdf",
