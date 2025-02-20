@@ -112,3 +112,63 @@ And true false =
 	$\Rightarrow  \lambda y. \lambda x . \lambda y. y$     
 	$\Rightarrow \lambda x . \lambda y. y$     Because no y
 	$\Rightarrow false$ 
+
+Not false =
+	$\lambda x . x \ \text{false } \text{true }  \text{false}$   
+	$(\lambda x . x \ \text{false true }) \ (\lambda x. \lambda y . y)$      
+	$(\lambda x. \lambda y . y) \ (\text{false true})$ 
+	$(\lambda y . y \ \text{true})$ 
+	true
+
+not (and a b) = or (not a) (not b)
+	Since we are doing this over arbitrary values (vars), put lambdas in front
+	$\lambda x . \lambda b . \text{not (and a b)} = \lambda a. \lambda b . \text{or (not a) (not b)}$
+	Simplifying the left side
+		$\lambda x.x \ \text{false true } ((\lambda x . \lambda y . x \ y \ x) \ a \ b)$    
+		$\lambda x.x \ \text{false true } (a \ b \ a)$     
+		$\text{a b a false true}$ 
+	Right side
+		$(\lambda x . \lambda y . x \ x \ y) \text{(not a) (not b)}$ 
+		$\text{(not a) (not a) (not b)}$ 
+		
+
+cons: $\lambda l . \lambda r . \lambda c. c \ l \ r$ 
+	l and r is a pair and c is a boolean that gives you one of them
+
+((cons v1) v2) =
+	$(((\lambda l . \lambda r . \lambda c. c \ l \ r) v_{1}) v_{2})$ 
+	$\lambda c. c \ v_{1} \ v_{2}$ 
+To get the left we put true there
+To get right we put false
+
+
+## Church numbers
+Canonical encoding of natural numbers in lambda calculus 
+Definition of *nv* from previous language is actually close
+	0, S(0), S(S(0)), ... S() = succ
+But note THESE ARE VALUES, you DONT EVAL FURTHER
+	Its because of numbers vs numerals
+	Numbers are the actual numbers
+	numerals are ways of representing numbers (ie roman numerals) 
+	Numerals represent numbers so S(S(0)) is a numeral representing 2
+
+In Rocq
+```
+Inductive nat :=
+	| 0 : nat
+	| S : nat -> nat
+```
+
+In lambda calc
+$0 = \lambda f . \lambda x . x$
+$1 = \lambda f . \lambda x . f \ x$
+$2 = \lambda f . \lambda x . f \ (f \ x)$ 
+And this thing is a value!!!!!!!!
+
+Adding 3 + 2:
+	$2 = \lambda f . \lambda x . f \ (f \ x)$ = S(S(0)) 
+	$3 = \lambda f . \lambda x . f (f \ (f \ x))$  = S(S(S(0)))
+	2+3 would be S(S(S(2)))
+
+Plus: $\lambda m . \lambda n . \lambda F . \lambda Z . (m \ F (n \ F) \ Z)$  
+	$(\lambda f . \lambda x . f (f \ (f \ x)))(\lambda f . \lambda x . f \ (f \ x))$ 
