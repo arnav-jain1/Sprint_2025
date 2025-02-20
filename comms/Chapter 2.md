@@ -203,4 +203,83 @@ Message format:
 
 
 ## DNS Domain name system
-When typing in a url we dont type the IP address we type a name like "eecs" 
+When typing in a url we dont type the IP address we type a name like "google.com"  how do we know it is google's IP
+Thats where DNS comes in
+	Distributed database: Hierarchy of name servers
+	Application layer protocols: Name servers have to communicate to resolve names (convert from name to IP) 
+	Core 
+
+![[Pasted image 20250219191604.png]]
+	For example, if you are looking for www.Amazon.com, you first query the .com DNS servers who then give you amazon.com then you ask for IP of www.amazon.com 
+
+Iterated query: 
+	If you query and they don't know, then they tell you where to ask
+	![[Pasted image 20250219191752.png]]
+	Example: You are at nyu requesting for umass
+		You First go to the local DNS which asks the root. The root tells you to ask TLD which twlls you to go to umass which gives you the IP and then you send it back
+
+Recursive query: Instead of responding with where to look, the DNS searches and this becomes recursive
+	![[Pasted image 20250219191931.png]]
+	Puts a lot of load on the root tho
+	Root talks to TLD which talks to umass which goes all the way back up
+
+You don't want a centralized because of it being a pain to scale, single point of failure, volumn, etc.
+
+DNS Root name:
+	The official last resort servers
+	Super important (ICANN
+	![[Pasted image 20250219192316.png]]
+
+## TLD and authoritative servers
+Top level domain (TLD): responsible for .com, .org, etc. as well as country ones like .ca, .in, etc
+
+authoritative DNS: Org's own DNS for hostname to IP mappings for named hosts
+	Maintained by org or ISP
+
+Local DNS:
+	Not in heirarchy 
+	Each ISP has one
+	When making a query, goes to ISP local DNS first (like a proxy)
+
+### Caching
+Once a mapping is learned by a DNS it is saved into memory (cached) for faster lookup
+	The entries dissappear after some time
+	Root not often visited
+Issue is that cached entries may be out of date
+
+
+## DNS Protocol 
+DNS query and reply have the same format 
+	![[Pasted image 20250219195358.png]]
+	Header 
+		16 bit query ID with message and response having the same one
+		Flags for more info (like message or reply, recursion, etc)
+	Information about the query itself
+
+
+DNS services:
+	hostname to IP 
+	Host (and mail server) aliasing 
+	Load distribution
+
+DNS Records (how it is stored)
+	distributed database with resource records (RR)
+	Format: `(name, value, type, ttl)`
+		Type=A: name is hostname and value is IP
+		Type=CNAME: name is an alias for the real name, value is real name (ibm.com -> backup2.ibm.com)
+		Type=NS: name is domain and value is hostname of authoritative domain
+		Type=MX: Value is the name of the mailserver 
+To register a new name, it has to be registered at DNS registrar where you provide names and  IP addresses of authoritative name server
+	From there, the registrar stores it in the respective TLD server 
+Can also create a type A record (local DNS) by inserting a type A RR with name of the website and value of the IP
+
+Example: Alice wants to access www.networkutopia.com
+	Her host sends query to local DNS which contacts TLD (may also have to contact root)
+	The TLD sends a reply to the local DNS with all of the records that match
+	Lets say it was type NS, the local then sends it to the authoritative DNS asking for the type A record which the authoritative will then send the right IP of which Alice connects to 
+
+DNS security: 
+	DDoS attacks bombard the DNS with traffic (not successful because caching)
+	Can also send bogus requests to DNS which makes it cache bogus stuff which makes it slower
+	You can also bombard TLD servers which is more common and potentially more dangerous
+	Can also intercept DNS queries to get info 
