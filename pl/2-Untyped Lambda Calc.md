@@ -172,3 +172,5 @@ Adding 3 + 2:
 
 Plus: $\lambda m . \lambda n . \lambda F . \lambda Z . (m \ F (n \ F) \ Z)$  
 	$(\lambda f . \lambda x . f (f \ (f \ x)))(\lambda f . \lambda x . f \ (f \ x))$ 
+
+
