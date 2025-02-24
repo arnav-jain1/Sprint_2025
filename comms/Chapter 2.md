@@ -283,3 +283,27 @@ DNS security:
 	Can also send bogus requests to DNS which makes it cache bogus stuff which makes it slower
 	You can also bombard TLD servers which is more common and potentially more dangerous
 	Can also intercept DNS queries to get info 
+
+## P2P review
+No always-on server
+End systems directly communicate 
+Peers request info (service) from other peers who then provide that service
+	New peers bring more demands but also increase the service capacity 
+Peers are intermittently connected (complex management)
+Like torrenting 
+
+## File distrib
+
+### Client server
+How long does it take to distribute a file of size *F* from one server to *N* people
+
+Must upload N copies of the file
+	Time for sending 1 copy is $F/u_{s}$ so for N files is $NF/u_{s}$ 
+Client has to download 1 copy of size F
+	Time is $F/d_{min}$ where d min is the minimum client download rate to $F/d_{max}$
+
+So time to distribute is $\text{max}(\frac{NF}{u_{s}}, \frac{F}{d_{min}})$ 
+
+### P2P
+Server: Needs to upload one time: $F/u_{s}$
+Client: Needs to download one time $F/d_{min}$ 
