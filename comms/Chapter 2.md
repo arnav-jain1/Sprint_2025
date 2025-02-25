@@ -307,3 +307,40 @@ So time to distribute is $\text{max}(\frac{NF}{u_{s}}, \frac{F}{d_{min}})$
 ### P2P
 Server: Needs to upload one time: $F/u_{s}$
 Client: Needs to download one time $F/d_{min}$ 
+	Because the client has to upload too, it limits max download $\frac{NF}{u_{s} + \Sigma u_{i}}$ 
+This makes 
+![[Pasted image 20250224153930.png]]
+![[Pasted image 20250224153946.png]]
+
+
+#### BitTorrent
+File is divided into chunks and peers send/recieve file chunks 
+	tracker: tracks peers in the torrent 
+	torrent: groups of peers exchanging the chunks of the file
+The peer joins the torrent and begins collecting chunks. 
+	In order to get peers, the peer registers with the tracker and connects to a few
+	When downloading, the peer uploads the chunks
+Churning: peers can come and go
+Once peer has full file, it can leave (selfishly) or remain in the torrent to upload (altrustically)
+
+Requesting chunks:
+	At any time any peer has a different subset of chunks
+	Alice will ask for chunks (randomly) that the others have
+	Alice requests the missing chunks with the rarest being first
+
+Sending chunks:
+	Alice sends chunks to those (top 4) peers sending her chunks at the highest rate (tit for tat)
+		Others do not receive chunks from her (choking)
+		re evaluate every 10 seconds
+	Every 30s, another peer randomly selected to start sending chunks to
+		optimistically unchoke the peer
+		New peer can join top 4
+![[Pasted image 20250224154709.png]]
+	Alice will unchoke bob 
+	Alice then becomes one of the top 4 providers 
+	This causes Bob to reciprocate and Bob becomes top 4 provider 
+	THe higher the upload rate, the better finding partners so you get the file faster too
+
+
+## Video streaming and CDNs
+Streaming video needs a lot of bandwidth
