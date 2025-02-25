@@ -343,4 +343,4 @@ Sending chunks:
 
 
 ## Video streaming and CDNs
-Streaming video needs a lot of bandwidth
+Streaming video needs a lot of bandwidtht
