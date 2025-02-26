@@ -170,7 +170,41 @@ Adding 3 + 2:
 	$3 = \lambda f . \lambda x . f (f \ (f \ x))$  = S(S(S(0)))
 	2+3 would be S(S(S(2)))
 
-Plus: $\lambda m . \lambda n . \lambda F . \lambda Z . (m \ F (n \ F) \ Z)$  
-	$(\lambda f . \lambda x . f (f \ (f \ x)))(\lambda f . \lambda x . f \ (f \ x))$ 
+Plus: $\lambda m . \lambda n . \lambda S . \lambda Z . (m \ S (n \ S) \ Z)$  
+	$\lambda m . \lambda n . \lambda S . \lambda Z . (m \ S (n \ S) \ Z) 2 \ 3$
+	$\lambda m . \lambda n . \lambda S . \lambda Z . (m \ S (n \ S) \ Z) (\lambda f_{2} \lambda ) 3$
 
+Times: $\lambda m . \lambda n . \lambda s . \lambda z . m ( n \ s \ z) z$ 
+
+
+## Let
+Using the = sign was cheating earlier because = does not exist in $\lambda$ calc
+
+You can make a prelude like so:
+$$(\lambda cons . \lambda left . \lambda right . \lambda l \text{ body}(\lambda r . \lambda c . c \ l \ r)(\lambda a. \lambda b. a)(\lambda a . \lambda b . b))$$ What this is doing is defining cons, left, and right early (like functions) and then the applications of the functions in the body
+
+= introduces stuff that you don't need. want to keep it as little as possible
+
+## Denotation
+The most common use case of lambda calc is denotational semantics where language constructs like if else statements, true/false, etc. is denoted to lambda calc constructs  so like
+$\mathbb{[[} \text{true} \mathbb{]]}= \lambda a . \lambda b . a$    
+$\text{if } t_{1} \text{ then } t_{2} \text{ else } t_{3} = ((t_{1}, t_{2}), t_{3})$   
+aka the thing on the left becomes the thing on the right
+
+
+## Recursion 
+Factorial:
+$f = \lambda x . if \ x=0 \ then \ 1 \ else \ x*(f(x-1))$ 
+But no equals and no global scope so can't really do this 
+$\lambda f . \lambda x . if \ x=0 \ then \ 1 \ else \ x*(f(x-1))$ 
+
+The omega combinator was chilling tho
+	Combinator is an expression with no vars
+
+$$(\lambda x. x \ x)(\lambda x. x \ x)$$
+
+Divergent (in our case) is a function that doesn't produce a value (like this one)
+
+This passes a copy of itself to itself so thats what we need
+	But there is no base case so it will never "get smaller" or stop
 
