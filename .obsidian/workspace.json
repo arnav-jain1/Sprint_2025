@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pl/2-Untyped Lambda Calc.md",
+                "file": "comms/hw/hw3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2-Untyped Lambda Calc"
+              "title": "hw3"
             }
           }
         ],
@@ -194,9 +194,10 @@
   },
   "active": "8c2927035409d196",
   "lastOpenFiles": [
+    "pl/2-Untyped Lambda Calc.md",
+    "comms/hw/hw3.md",
     "latex guide.md",
     "pl/hw/hw2.md",
-    "pl/2-Untyped Lambda Calc.md",
     "comms/Chapter 2.md",
     "comms/Pasted image 20250224154709.png",
     "comms/Pasted image 20250224153946.png",
