@@ -15,4 +15,15 @@
 5. 
 	a) So assuming this is a recursive DNS, the user first goes to its own DNS (if it has one) which then requests the root DNS. The root requests the TLD. The TLD sends a request to the authoritative which send the requested IP address back which propagates back up the chain until the user recieves it. Then the user establishes the HTTP connection via TCP and then requests for the object itself
 	b) $x_{1}+x_{2}+...x_{N}+2x_{0}$  (2 to establish HTTP)
-6. 
+6. ![[Pasted image 20250226201839.png]]
+	a) redbull.com
+	b) Theres one thats A and another thats AAAA
+	c) 23.49.251.197 and 23.49.251.219
+	d) Theres one thats A and another thats AAAA
+	e) Since we didn't know the IP associated with redbull.com, we instead ask the DNS. The DNS is a database with the domain name and the IP registered with it so it searches the name, finds its respective IP and sends it to us so we can connect to it
+7. 
+	a) nslookup seemed more simple and easy to use while dig seemed a bit more complex but providing much more information. Interestingly, I tried the steam website and it didn't work for nslookup suggesting they might have their own database or something.
+	b) -debug can be used is an option for getting more detailed information -port={port_number} specifies a specific port number to use and -timeout={time} is for setting a max time before exiting 
+	c) +short displays only the essential info, +x is a reverse DNS lookup, +stats shows statistics
+		I ran it on Google and there were pretty much no differences. I also ran it on 1337x.to and there were actually more domains listed but only like one or 2
+	d) Trace starts at the root and iterates through each level showing the response from root to TLD to authoritative 
