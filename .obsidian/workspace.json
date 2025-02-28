@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -220,14 +220,14 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "778253a9e6024de6",
+  "active": "ab0f36ea89405187",
   "lastOpenFiles": [
+    "comms/Chapter 3.md",
+    "pl/hw/hw2.md",
     "pl/hw/hw2.pdf",
     "comms/hw/hw3.md",
     "comms/Typing.md",
     "pl/2-Untyped Lambda Calc.md",
-    "pl/hw/hw2.md",
-    "comms/Chapter 3.md",
     "comms/hw/hw3.pdf",
     "comms/hw/Pasted image 20250226201839.png",
     "latex guide.md",
@@ -261,7 +261,6 @@
     "comms/hw/hw1/HW1.pdf",
     "comms/hw/hw1/home_4pm.txt~",
     "comms/hw/hw1/program.py~",
-    "comms/hw/hw1/home_6pm.txt~",
     "quantum/1-22.md",
     "465/!All.md",
     "465/!Study Guide.md",
