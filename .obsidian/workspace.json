@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comms/hw/hw3.md",
+                "file": "arch/! practice.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hw3"
+              "title": "! practice"
             }
           },
           {
@@ -222,10 +222,10 @@
   },
   "active": "ab0f36ea89405187",
   "lastOpenFiles": [
+    "comms/hw/hw3.md",
     "comms/Chapter 3.md",
     "pl/hw/hw2.md",
     "pl/hw/hw2.pdf",
-    "comms/hw/hw3.md",
     "comms/Typing.md",
     "pl/2-Untyped Lambda Calc.md",
     "comms/hw/hw3.pdf",
