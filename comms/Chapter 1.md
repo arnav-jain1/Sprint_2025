@@ -189,8 +189,8 @@ Link layer adds the last layer called the frame
 
 
 
-1: 4/4
-4: 8/8
-addl 2: 4/4
-addl 3: 4/4
-
+4: 5/5
+7: 5/5
+12: 5/5
+16a: 5/5
+16b: 5/5
