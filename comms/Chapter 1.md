@@ -183,14 +183,3 @@ Network layer adds another header with the full thing called a datagram
 Link layer adds the last layer called the frame
 
 ![[Pasted image 20250205124421.png]]
-
-
-## 
-
-
-
-9: 4/4
-11: 4/4
-1b: 4/4
-1c: 4/4
-1d: 4/4

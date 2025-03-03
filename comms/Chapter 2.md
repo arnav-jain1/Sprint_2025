@@ -343,4 +343,30 @@ Sending chunks:
 
 
 ## Video streaming and CDNs
-Streaming video needs a lot of bandwidtht
+Streaming video needs a lot of bandwidth and there are a lot of users at once. 
+You need distributed, application layer infrastructure 
+
+
+### Dynamic Adaptive Streaming over HTTPs (DASH)
+Server:
+	Video is split into multiple chunks which are stored and encoded at different rates
+	Provides url for different chunks
+client:
+	Measures bandwidth periodically
+	Requests one chunk at a time while chosing the encoding depending on the bandwidth 
+		Encoding can change
+	Client determines:
+		When to request the chunk
+		what encoding rate
+		Where to request the chunk from (which CDN)
+Streaming is the result of encoding, DASH, and buffering
+
+Distributing the info is still a challenge as 1 server simply doesn't scale
+Instead, have multiple distributed sites with copies of the info (CDNs)
+	Enter deep model: Have many CDNs deep into access networks 
+	Bring home: Smaller but larger clusters near but not in access networks
+
+CDNs store copies of content and then when requested, instead of going to the server they go to the CDN
+	The questions are which CDN to use, what to store, what if the CDN is congested 
+
+
