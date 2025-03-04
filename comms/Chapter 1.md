@@ -105,6 +105,7 @@ Then there are content provider networks that bring the services closer to you
 ## Internet structure
 Tier 1 commercial ISPs are stuff like ATT, Verizon that provide coverage
 Content provider networks are private networks that connect the data center to the internet
+![[Pasted image 20250304083715.png]]
 ## Network Edge
 
 Edge is the end users, the once connected to the internet
@@ -113,7 +114,9 @@ Edge is the end users, the once connected to the internet
 Multiplexing: Sharing a resource among multippe users 
 	Frequency Division Multiplexing (FDM): Partition resource in frequency, each device gets a different part of the frequency band
 	Time division multiplexing (TDM): Partition resource in time, the device gets access to the full band but only for a certain time
+	![[Pasted image 20250304083855.png]]
 <mark style="background: #FF5582A6;">	Statistical multiplexing</mark>: Not allocate rigid resources, resources used as needed (kind of sharing)
+	Packet switching: Break the info into packets and then send the packets. Each packet uses the full bandwidth and the bandwidth is used as needed
 
 
 **Fundemental question:** How is data transferred through the network?
@@ -127,7 +130,7 @@ Packet switching: Hosts break application layer messages into packets where the 
 	Resources only used as needed
 
 The issue with this is that the amount of packets being sent can be more than the computer can handle, packet queue becoming too long can cause congestion and delays and if the queue is full then packets are dropped
-	Pros: Good for bursty, resource sharing
+	Pros: Good for bursty, resource sharing, also simpler
 	Cons: Can lead to congestion
 
 
@@ -143,6 +146,7 @@ Packets have a delay on end-to-end paths with 4 sources at each hop
 	queueing delay ($d_{queue}$): Time waiting at output link for transmission (how long a packet waits in the queue until it's sent), depends on congestion
 	transmission delay ($d_{trans}$): equal to $\frac{\text{packet length}}{\text{transmission rate}}$ 
 	propogation delay ($d_{prop}$): time it takes to travel through the cord, equal to $\frac{\text{Length of physical link}}{\text{Propogation speed}}$ 
+	![[Pasted image 20250304085950.png]]
 
 Packet loss occurs if the arrival rate of packets (in bps) is more than the transmission rate (in bps) of the router
 	Packets get queued to be sent and and are lost if the queue (in memory) can't hold any more
@@ -151,9 +155,9 @@ Packet queuing delay:
 	R = link bandwidth (bps)
 	L = packet length (bits)
 	a = average packet arrival rate (bps)
-	If $\frac{Ra}{L} \approx 0$ then small delay
-	If $\frac{Ra}{L} \approx 1$ then large delay
-	If $\frac{Ra}{L} > 1$ then more packets arriving than can be serviced, infinite delay with packet loss
+	If $\frac{La}{R} \approx 0$ then small delay
+	If $\frac{La}{R} \approx 1$ then large delay
+	If $\frac{La}{R} > 1$ then more packets arriving than can be serviced, infinite delay with packet loss
 
 
 Traceroute shows the delay from the source to every router that a packet travels 
