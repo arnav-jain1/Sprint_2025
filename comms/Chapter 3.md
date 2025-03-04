@@ -107,3 +107,36 @@ Checksum:
 Overall UDP is quick and dirty
 	Also "best effort" aka send and hope for the best
 	No handshake so faster and has checksum which is good
+
+## Principals of reliable data transfer
+Goals: 
+1. Data integrity (No packet loss/duplication, and in-order)
+2. Flow control (Receiver does not overflow)
+Mechanisms:
+	Acknowledgement (ACK) 
+	Time out
+	Re-transmission 
+
+Application layer assumes reliable channel but transport layer does not
+![[Pasted image 20250304095907.png]]
+	The data transfer complexity depends highly on how reliable the channel is and why the channel is unreliable (corruption, packet loss)
+	Sender and receiver also do not know state of each other  like whether a packet was received or not (unless communicated)
+
+<mark style="background: #FF5582A6;">Missed some stuff</mark>
+
+Implemented using finite state machines where it becomes more complex depending on the problem
+	![[Pasted image 20250304100514.png]]
+	Unidirectional but control flow changes both directions
+
+### Case 1: Reliable channel
+![[Pasted image 20250304100647.png]]
+Really simple. As soon as you send the reciever just says received and you are good but unrealisitic
+
+### Case 2: bit errors
+Channel flips bits
+Use checksums and acknowledgement
+Acknowledgement (ACK): 
+	Tells sender packet was received 
+Negative Acknowledgement (NAK): Tells sender packet has errors and the sender resends
+The sender waits for the ACK before sending another (stop and wait)
+	
