@@ -1,7 +1,11 @@
-4.3.4: 5/5
-4.3.18: 5/5
-4.4.4: 5/5
-4.4.8: 5/5
-4.4.12: 5/5
+# ToDo springbreak
 
-A1+2A2 + 3A3 + 4A4=A
+- Apply IB/finance
+- Research for cs
+- Research for math
+- Read textbook for PLT
+- HW for Comms
+- HW for arch
+- HOA + UGRA scholarships
+- Research grad school
+- Grade 
