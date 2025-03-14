@@ -20,5 +20,5 @@ Prove |FV(t)| $\le$ size(t)
 	Lazy eval: Delete the first/second and replace the 3rd with the following: $(\lambda x. t_{1}) t_{2} \rightarrow [x \rightarrow t_{2}]t_{1}$ 
 	Beta reduction: replace the first two terms with: $\frac{t_{1} \rightarrow v_{1} \quad t_{2} \rightarrow v_{2}}{\lambda t_{1} t_{2} \rightarrow v_{1} v_{2}}$   
 4. 
-	$$\frac{t_{1} \rightarrow wrong}{t_{1} \ t_{2} \rightarrow wrong} \quad \frac{t_{2} \rightarrow wrong}{ t_{1} \ t_{2} \quad \rightarrow wrong} (\lambda. t_{12})wrong \rightarrow wrong$$ 
+	$$\frac{t_{1} \rightarrow wrong}{t_{1} \ t_{2} \rightarrow wrong} \quad \frac{t_{2} \rightarrow wrong}{ t_{1} \ t_{2} \rightarrow wrong} \quad \frac{v_{1} \rightarrow wrong}{(\lambda. t_{12})v_{1} \rightarrow wrong}$$
 	
