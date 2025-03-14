@@ -10,12 +10,12 @@
 	Thus the statement holds	
 	Another proof would be all terms evaluate to 1 value therefore $\forall t, |FV(t)|=1$  so the statement must be true (proof by logic)
 
-I just found out that this should be for lambda calc so finish this later
-Prove |FV(t)| $\le$ size(t)
-	Case 1: t = x. This case is obvious, the |FV(t)| = 1 = size(t)
-	Case 2: $t=\lambda x. t_{1}$. |FV(t)| = 1 = size(t) since functions are values
-	Case 3: $t = (t_{1} \ t_{2})$  $|FV(t)| = |FV(t_{1}) \cup FV(t_{2})| \le |FV(t_{1})| + |FV(t_{2})|$  which by induction hypothesis $\le size(t_{1}) + size(t_{2}) = size(t)$ 
-	So for all cases, the statement holds
+Ignore the above, I did an oops
+	Prove |FV(t)| $\le$ size(t)
+		Case 1: t = x. This case is obvious, the |FV(t)| = 1 = size(t)
+		Case 2: $t=\lambda x. t_{1}$. |FV(t)| = 1 = size(t) since functions are values
+		Case 3: $t = (t_{1} \ t_{2})$  $|FV(t)| = |FV(t_{1}) \cup FV(t_{2})| \le |FV(t_{1})| + |FV(t_{2})|$  which by induction hypothesis $\le size(t_{1}) + size(t_{2}) = size(t)$ 
+		So for all cases, the statement holds
 3. 
 	Lazy eval: Delete the first/second and replace the 3rd with the following: $(\lambda x. t_{1}) t_{2} \rightarrow [x \rightarrow t_{2}]t_{1}$ 
 	Beta reduction: replace the first two terms with: $\frac{t_{1} \rightarrow v_{1} \quad t_{2} \rightarrow v_{2}}{\lambda t_{1} t_{2} \rightarrow v_{1} v_{2}}$   
