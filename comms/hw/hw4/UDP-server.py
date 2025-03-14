@@ -5,7 +5,7 @@ import sys
 port = int(sys.argv[1])
 try:
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.bind(('', port))
+    s.bind(('0.0.0.0', port))
 except socket.error as err:
     print("Error: ", err)
     exit()

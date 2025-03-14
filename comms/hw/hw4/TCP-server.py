@@ -5,7 +5,8 @@ import sys
 port = int(sys.argv[1])
 try:
     s = socket.socket()
-    s.bind(('', port))
+    s.bind(('0.0.0.0', port))
+    s.listen()
     print("established socket")
 except socket.error as err:
     print("Error: ", err)
@@ -15,7 +16,6 @@ except socket.error as err:
 
 print("Listening on port: ", port)
 
-counter = 0
 while True:
     try:
         c, addr = s.accept()
@@ -27,11 +27,10 @@ while True:
         print("Sent date")
 
         c.close()
-        print("Closed connection")
-        counter += 1
 
     except KeyboardInterrupt:
         print("Stopping program, closing socket")
         s.close()
+        break
 
 
