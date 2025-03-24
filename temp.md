@@ -10,7 +10,6 @@
 
 
 Monday:
-- UGRA
 - TensorRight
 - Math HW 
 - Fill out UGRA thing
