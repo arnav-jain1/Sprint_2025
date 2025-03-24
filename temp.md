@@ -2,8 +2,15 @@
 
 - Apply IB/finance
 - Research for cs
-- Research for math
+- TensorRight prez
 - Read textbook for PLT
-- HOA + UGRA scholarships
+- UGRA scholarships
 - Research grad school
 - Grade 
+
+
+Monday:
+- UGRA
+- TensorRight
+- Math HW 
+
