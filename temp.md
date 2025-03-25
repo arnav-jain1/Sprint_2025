@@ -9,7 +9,9 @@
 - Grade 
 
 
-Monday:
+Tues:
 - TensorRight
 - Math HW 
 - Fill out UGRA thing
+- Update paper
+- Look at 645

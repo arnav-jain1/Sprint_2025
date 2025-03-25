@@ -121,12 +121,17 @@ Application layer assumes reliable channel but transport layer does not
 ![[Pasted image 20250304095907.png]]
 	The data transfer complexity depends highly on how reliable the channel is and why the channel is unreliable (corruption, packet loss)
 	Sender and receiver also do not know state of each other  like whether a packet was received or not (unless communicated)
-
-<mark style="background: #FF5582A6;">Missed some stuff</mark>
+![[Pasted image 20250325082453.png]]
+	Essentially the rdt_send() is called first and that gives it to rdt
+	rdt calls udt_send() to send info over unreliable channel
+	rdt_rev() for recieving the packet
+	deliver_data() to get the packet to the upper layer
 
 Implemented using finite state machines where it becomes more complex depending on the problem
 	![[Pasted image 20250304100514.png]]
 	Unidirectional but control flow changes both directions
+
+incrementally develop the sender and receiver, called reliable data transfer protocol
 
 ### Case 1: Reliable channel
 ![[Pasted image 20250304100647.png]]
@@ -139,4 +144,103 @@ Acknowledgement (ACK):
 	Tells sender packet was received 
 Negative Acknowledgement (NAK): Tells sender packet has errors and the sender resends
 The sender waits for the ACK before sending another (stop and wait)
-	
+
+![[Pasted image 20250325083450.png]]![[Pasted image 20250325083514.png]]
+But what if ACK/NACK is corrupted? 
+	Sender doesn't know and can't just re-transmit
+
+Duplicates:
+	Retransmit current packet if ACK/NACK is corrupted
+	Add a seq number so that the reciever can check if they already have it, discard if so
+	![[Pasted image 20250325083828.png]]
+
+Sender:
+![[Pasted image 20250325084108.png]]
+
+Reciever:
+![[Pasted image 20250325084152.png]]
+
+### RDT 2.2 NACK-free
+Same as the prev but no more NACKs
+Instead ACKs has seq number and if 2 of the same ACKs come back, that acts as a NACK
+![[Pasted image 20250325084328.png]]
+
+
+### RDT 3.0
+Previous assumed packets were not lost, they were just wrong but what if packets are lost
+Sender waits certain amount of time for ACK (timeout), retransmit if no ack
+	retransmission duplicate doesnt matter bc of seq number
+Called automatic repeat request (ARQ)
+![[Pasted image 20250325084912.png]]
+![[Pasted image 20250325084943.png]]
+
+
+Sender
+![[Pasted image 20250325085020.png]]
+
+Performance:
+	U (Utilization): fraction of time sender is sending
+	Example: 1 Gbps, 15ms prop, 8000 bit packet
+		D = L/R = 8000/10^9 = 8microsec
+	![[Pasted image 20250325090907.png]]
+	Util = D/(RTT+ D)
+	Performance SUCKS
+Pipelining: Sender has multiple in flight packets that are yet to be acknowledged
+	Range of seq numbers increased
+	Buffering and sender and/or receiver
+
+![[Pasted image 20250325091149.png]]
+
+2 ways to implement: 
+	Go-back-N:
+		Sender has N packets in the pipeline
+		Receiver sends 1 cumulative ACK
+		sender has timer for the oldest unacked packet, transmit all unacked packets 
+	Selective repeat:
+		Sender has N packets in pipeline
+		Individual ack for each packet
+		Timer for each packet, retransmit only the unacked packet
+
+Go-back-N:
+	Sender:
+		"window" of N transmitted but unacked packets
+		![[Pasted image 20250325093719.png]]
+		ACK all packets up to (and including) seq number N, when ACK is received, move the window to start at n+1
+		Timer for oldest packet
+		timeout(n): retransmit n and all higher seq numbers
+	Reciever:
+		ACK-only: always send ACK for correctly recieved packet with the highest in order seq number
+			Only need to remember rsv base but may generate duplicate ACKs
+		When it gets a packet that is out of order:
+			You can discard or you can save depending on implementation
+			reACK pkt with the highest in-order seq #![[Pasted image 20250325094632.png]]
+	![[Pasted image 20250325094723.png]]	
+
+
+Selective repeat:
+	Reciever acknoledges each correct packet individually
+		Buffer the packets as you need them to get back to in-order
+	Sender time-outs individually for each unacked packet (timer for each packet)
+	Sender window:
+		N consecutive seq \#s, limits seq # of sent unacked packet
+	![[Pasted image 20250325095244.png]]
+	Sender:
+		If the next availble seq number is ready, send it
+		timeout for each packet, resend the packet
+		Mark each packet as recieved once you get it
+		If the end (n) is the smallest unacked packet, move the window
+	Receiver:
+		When you get the packet send the ACK
+		Buffer any out of order packet
+		In order packet moves the window to the next packet that you are waiting for
+		If it is in the previous window, then send the ack
+		If it is not in the current or prev window, ignore it
+	![[Pasted image 20250325100043.png]]
+
+
+
+One issue with selective repeating is this scenario:
+	Lets say 4 seq # (base 4 counting) and window size 3
+	![[Pasted image 20250325100229.png]]
+	There is a mismatch and neither sides are aware
+	Size of seq # needs to be at least 2x window size
