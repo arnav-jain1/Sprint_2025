@@ -25,3 +25,14 @@ Cite at end of the sentence
 
 Less technically
 
+
+For abstract say ppl tryna learn, ml, yadda yadda
+Problems at end of the pipeline, errors causing wacky results
+Set up the problem
+Numpy foundational 
+Introduce shape errors
+
+
+
+
+Complex example that will transform the input, say it can verify for all inputs
