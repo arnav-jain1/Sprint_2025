@@ -27,11 +27,6 @@ Less technically
 
 
 For abstract say ppl tryna learn, ml, yadda yadda
-Problems at end of the pipeline, errors causing wacky results
-Set up the problem
-Numpy foundational 
-Introduce shape errors
-
 
 
 
