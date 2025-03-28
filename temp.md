@@ -26,6 +26,7 @@ Tues:
 
 Talk about why difficult
 Foreshadow difficulty
+	Mention type system strict
 
 
 540899
