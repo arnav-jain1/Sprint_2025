@@ -19,18 +19,13 @@ Tues:
 
 
 
-Check font size
-Cite at end of the sentence
-
-
-Less technically
-
-
-For abstract say ppl tryna learn, ml, yadda yadda
 
 
 
-Complex example that will transform the input, say it can verify for all inputs
+
+
+Talk about why difficult
+Foreshadow difficulty
 
 
 540899
