@@ -11,22 +11,15 @@
 
 Tues:
 - TensorRight
-- Math HW 
+- diff eq HW 
 - Fill out UGRA thing
 - Update paper
-- Look at 645
+- Read PL 
+- Read 645
 
 
 
 
-
-
-
-
-
-Talk about why difficult
-Foreshadow difficulty
-	Mention type system strict
 
 
 540899
