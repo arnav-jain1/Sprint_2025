@@ -11,11 +11,10 @@
 
 Tues:
 - TensorRight
-- diff eq HW 
-- Fill out UGRA thing
-- Update paper
 - Read PL 
 - Read 645
+- Write for Dr. Guria
+- Stupid SELF thing
 
 
 

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp.md",
+                "file": "pl/hw/hw1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp"
+              "title": "hw1"
             }
           }
         ],
@@ -180,6 +180,8 @@
   },
   "active": "9f01f7ac4dcd2474",
   "lastOpenFiles": [
+    "pl/1- Intro.md",
+    "temp.md",
     "comms/Chapter 3.md",
     "comms/Pasted image 20250325100229.png",
     "comms/Pasted image 20250325100043.png",
@@ -191,7 +193,6 @@
     "comms/Pasted image 20250325090907.png",
     "comms/Pasted image 20250325085020.png",
     "comms/Pasted image 20250325084943.png",
-    "temp.md",
     "pl/3- Typing.md",
     "comms/hw/hw4/hw4.md",
     "comms/hw/hw4.pdf",
@@ -201,7 +202,6 @@
     "pl/hw/hw3.pdf",
     "pl/2-Untyped Lambda Calc.md",
     "pl/Typing.md",
-    "pl/1- Intro.md",
     "temp.md~",
     "quantum/1-22.md",
     "comms/Chapter 2.md",
