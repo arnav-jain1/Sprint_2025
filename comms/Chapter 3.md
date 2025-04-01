@@ -245,3 +245,33 @@ One issue with selective repeating is this scenario:
 	![[Pasted image 20250325100229.png]]
 	There is a mismatch and neither sides are aware
 	Size of seq # needs to be at least 2x window size
+
+
+# TCP Overview
+- Point-to-point: One sender/reciever 
+- Reliable, in-order
+- Full duplex (bidirectional)
+- Cumulative acks
+- Pipelining: congestion and flow control, set window size
+	- Won't overwhelm receiver
+- Connection-oriented: handshaking to initialize sender and reciever before sending
+
+
+## Segment
+Segment size:
+	![[Pasted image 20250401102116.png]]
+	The max segment size is 1460, add 20B for Transport layer
+Segment structure:
+	Includes source and dest port, seq number(counts bytes of data in the stream, not segments)
+	seq # of the next expected byte, checksum
+	Length of header
+	Bits for: ACK, congesstion control options, (C, E), RST/SYN/FIN for connection management, 
+	Flow control: Bytes that can be accepted
+	TCP options and data
+	![[Pasted image 20250401102631.png]]
+
+The seq number is the position of the first byte of the packet. 
+Ack: Seq number of the next expected byte
+
+
+Out of order packets is up to implementer to decide
