@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pl/hw/hw1.md",
+                "file": "comms/Chapter 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hw1"
+              "title": "Chapter 3"
             }
           }
         ],
@@ -180,7 +180,10 @@
   },
   "active": "9f01f7ac4dcd2474",
   "lastOpenFiles": [
+    "pl/3- Typing.md",
+    "pl/2-Untyped Lambda Calc.md",
     "pl/1- Intro.md",
+    "pl/hw/hw1.md",
     "temp.md",
     "comms/Chapter 3.md",
     "comms/Pasted image 20250325100229.png",
@@ -193,14 +196,12 @@
     "comms/Pasted image 20250325090907.png",
     "comms/Pasted image 20250325085020.png",
     "comms/Pasted image 20250325084943.png",
-    "pl/3- Typing.md",
     "comms/hw/hw4/hw4.md",
     "comms/hw/hw4.pdf",
     "comms/hw/hw4/UDP-server.py~",
     "comms/hw/hw4/TCP-server.py~",
     "pl/hw/hw3.md",
     "pl/hw/hw3.pdf",
-    "pl/2-Untyped Lambda Calc.md",
     "pl/Typing.md",
     "temp.md~",
     "quantum/1-22.md",
@@ -220,7 +221,6 @@
     "comms/hw/hw2.md",
     "comms/hw/hw2.pdf",
     "arch/Lec 2.md",
-    "pl/hw/hw1.md",
     "pl/hw/hw1.pdf",
     "pl/hw",
     "comms/hw/hw1/HW1.md",

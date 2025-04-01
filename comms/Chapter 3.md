@@ -1,3 +1,4 @@
+Application layer assumes reliable data transfer, transport layer has to actually implement the reliable transfer 
 # Sockets
 
 Sockets: Door between Application process and end-end transport protocol 
