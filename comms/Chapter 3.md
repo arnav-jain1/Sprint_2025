@@ -136,7 +136,7 @@ incrementally develop the sender and receiver, called reliable data transfer pro
 
 ### Case 1: Reliable channel
 ![[Pasted image 20250304100647.png]]
-Really simple. As soon as you send the reciever just says received and you are good but unrealisitic
+Really simple. You just keep sending like UDP
 
 ### Case 2: bit errors
 Channel flips bits
