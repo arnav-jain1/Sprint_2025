@@ -270,7 +270,7 @@ Segment structure:
 	TCP options and data
 	![[Pasted image 20250401102631.png]]
 
-The seq number is the position of the first byte of the packet. 
+	The seq number is the position of the first byte of the packet. 
 Ack: Seq number of the next expected byte
 
 
