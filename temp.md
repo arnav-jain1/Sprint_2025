@@ -1,20 +1,12 @@
-# ToDo springbreak
+# ToDo
 
-- Apply IB/finance
+- Study 558
+- Write for Dr. Guria
+- Finish self thing
 - Research for cs
-- TensorRight prez
-- Read textbook for PLT
-- UGRA scholarships
 - Research grad school
 - Grade 
-
-
-Tues:
-- TensorRight
-- Read PL 
-- Read 645
-- Write for Dr. Guria
-- Stupid SELF thing
+- Apply IB/finance
 
 
 
@@ -25,7 +17,8 @@ Tues:
 
 
 
-4 5/5:  
-6 5/5: 
-14 5/5: 
-22 10/10:
+6 5/5:
+4 5/5:
+8 5/5:
+12 5/5:
+34 5/5:
