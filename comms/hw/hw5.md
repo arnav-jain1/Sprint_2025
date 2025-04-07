@@ -6,7 +6,7 @@
 	b) QUIC runs on top of UDP so it is low latency and uses the UDP transport method. Like TCP, it has congestion/flow control and other similar mechanisms to make it reliable. It is significantly faster than TCP though. It also has multiplexing allowing for multiple data to be sent over one connection as well as encryption built in (instead of TLS)
 	c) QUIC is supported by all browsers and HTTP/3. It is also over half of Google's full traffic. According to https://w3techs.com/technologies/details/ce-quic it is used by a little over 8% of all websites
 2. 
-	01010011 + 01100110 = 10111001 + 01110100 = 0010_1101, complement = 1101_0010. The complement is used because you can add the original sum to the complement and then get all 1s. This is a lot easier for the computer to check than individual bits. The complement also makes it endian independent. If just the sum is used then the computer doesn't know if the start is the largest number or the end. Errors are detected if the sum of all the bits + the checksum given does not equal all 1s. 1-bit errors will always be detected while 2-bit errors will not be.
+	01010011 + 01100110 = 10111001 + 01110100 = 0010_1101 + carry in = 0010_1110, complement = 1101_0001. The complement is used because you can add the original sum to the complement and then get all 1s. This is a lot easier for the computer to check than individual bits. The complement also makes it endian independent. If just the sum is used then the computer doesn't know if the start is the largest number or the end. Errors are detected if the sum of all the bits + the checksum given does not equal all 1s. 1-bit errors will always be detected while 2-bit errors will not be.
 3. 
 	a) Source is 1500 and destination is 1200
 	b) Yes, the source IP will be different for both packets
@@ -20,9 +20,9 @@
 	a) Telnet is on port 23 and it is like an SSH. You access a CLI remotely but it is insecure with no encryption so it is kind of obsolete.
 	b) 
 		i) A: Arbitrary, lets say 8100. S = 23 
-		ii) B: Arbitrary, lets say 8101. S = 23 
-		iii) A: Same as before 8100. S = 23 
-		iv) B: Same as before 8101. S = 23 
+		ii) B: Arbitrary, lets say 8101. S = 23  
+		iii) A: 8100 is the dest. S = 23 is the source
+		iv) B: 8101 is the dest. S = 23 is the source
 		v) Yes, the sources aren't aware of each other so they could randomly use the same one. It doesn't matter since the source IP is also used as the key
 		vi) If they are the same host then it needs to be different because then source IP would be the same and if the port is too then the key would be the same making it impossible to distinguish
 ## Part 2

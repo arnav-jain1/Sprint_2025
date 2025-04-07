@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp.md",
+                "file": "comms/hw/hw5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp"
+              "title": "hw5"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "9f01f7ac4dcd2474",
   "lastOpenFiles": [
+    "temp.md",
     "comms/hw/hw5.md",
     "comms/hw/hw5.pdf",
     "comms/hw/Pasted image 20250404192345.png",
@@ -197,7 +198,6 @@
     "pl/3- Typing.md",
     "pl/2-Untyped Lambda Calc.md",
     "pl/hw/hw1.md",
-    "temp.md",
     "comms/hw/hw4/hw4.md",
     "comms/hw/hw4.pdf",
     "comms/hw/hw4/UDP-server.py~",
