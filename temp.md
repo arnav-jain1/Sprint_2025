@@ -40,3 +40,6 @@ Addl:
 	10,000 - 361 = 9639
 5 6/6:
 6 6/6:
+
+
+c recurrence relation) the trick is to multiply out a_n = (n+1)^2 = n^2 + 2n+1. Then n^2 is the same as a_n-1 so a_n = a_n-1 +2n + 1
