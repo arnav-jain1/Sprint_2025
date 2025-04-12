@@ -43,3 +43,4 @@ Addl:
 
 
 c recurrence relation) the trick is to multiply out a_n = (n+1)^2 = n^2 + 2n+1. Then n^2 is the same as a_n-1 so a_n = a_n-1 +2n + 1
+The rec relation for c is close. When you are doing a_n+1, n will be 1 less. For example in a_5, n =4. So for a_5=a_4 +9 = 34 instead of 36. To fix this either do +3 instead of +1 or a_n = a_n-1 + 2n + 1
