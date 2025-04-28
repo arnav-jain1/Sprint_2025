@@ -40,3 +40,13 @@ TODO
 
 
 4. 
+	![[Pasted image 20250423140421.png]]
+		School, accurate
+	![[Pasted image 20250423140823.png]]
+		Different university, accurate
+	![[Pasted image 20250423141149.png]]
+		Friend's website hosted with cloudflare, also accurate.
+	![[Pasted image 20250423143400.png]]
+		Zurich website, also accurate
+	All of the websites were accurate when it came to finding the city of hosting. 
+	b) One use case is for services to target info to people living in certain areas. There is no point in showing news articles about a city in China to someone living in North Dakota so being able to target the user with information that is closer (literally) to them is useful. The other is to track malicious users. If there is someone committing crimes on the internet then you can find where they are and respond with law enforcement. 

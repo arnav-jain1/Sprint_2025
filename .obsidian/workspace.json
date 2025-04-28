@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "hw7"
             }
+          },
+          {
+            "id": "57b594c2aca04c80",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,8 +176,12 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "a47ea4b44c7dc059",
+  "active": "57b594c2aca04c80",
   "lastOpenFiles": [
+    "comms/hw/Pasted image 20250423143400.png",
+    "comms/hw/Pasted image 20250423141149.png",
+    "comms/hw/Pasted image 20250423140823.png",
+    "comms/hw/Pasted image 20250423140421.png",
     "comms/hw/Pasted image 20250423125943.png",
     "comms/hw/Pasted image 20250423124816.png",
     "comms/hw/Pasted image 20250423124359.png",
@@ -184,15 +201,11 @@
     "comms/hw/hw6.pdf",
     "comms/hw/Pasted image 20250415202504.png",
     "comms/hw/Pasted image 20250415202450.png",
-    "comms/hw/Pasted image 20250415202443.png",
     "temp.md",
     "latex guide.md",
     "pl/2-Untyped Lambda Calc.md",
     "comms/hw/hw5.md",
     "comms/hw/hw5.pdf",
-    "comms/hw/Pasted image 20250404192345.png",
-    "comms/hw/Pasted image 20250404192321.png",
-    "comms/hw/Pasted image 20250404191655.png",
     "comms/Chapter 3.md",
     "pl/1- Intro.md",
     "comms/hw/hw4/hw4.md",
