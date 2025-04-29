@@ -33,8 +33,7 @@
               "title": "Release Notes 1.8.10"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,8 +175,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "57b594c2aca04c80",
+  "active": "a47ea4b44c7dc059",
   "lastOpenFiles": [
+    "comms/hw/Pasted image 20250428133314.png",
     "comms/hw/Pasted image 20250423143400.png",
     "comms/hw/Pasted image 20250423141149.png",
     "comms/hw/Pasted image 20250423140823.png",
@@ -200,7 +200,6 @@
     "comms/hw/hw6.md",
     "comms/hw/hw6.pdf",
     "comms/hw/Pasted image 20250415202504.png",
-    "comms/hw/Pasted image 20250415202450.png",
     "temp.md",
     "latex guide.md",
     "pl/2-Untyped Lambda Calc.md",

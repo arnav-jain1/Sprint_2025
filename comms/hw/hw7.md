@@ -36,8 +36,8 @@
 		![[Pasted image 20250423124816.png]]
 		The -r flag shows the routing table for the kernel which essentially just tells the computer where to route traffic. Looking at the last entry, the address 172.18.0.0 is the network for the route (in this case I think it is a doker container), the gateway is none, the mask is for the size of the network (/16), the flag is U which means active. The next 2 are for max segment/window size (not used). irtt is round trip estimate (not used). And the last one is the network interface which according to google is a docker bridge.
 	b)
-TODO
-
+		![[Pasted image 20250428133314.png]]
+		This is for KU. The first lease was replaced by the second entry when I forced my computer to renew the lease (I wanted more interesting output). It is cool to see a history of the leases. The mask is /17 and The lease length is 8 mins which is not very long. The DHCP broadcast address is 10.109.127.255 which is the highest address for /17
 
 4. 
 	![[Pasted image 20250423140421.png]]
@@ -49,4 +49,4 @@ TODO
 	![[Pasted image 20250423143400.png]]
 		Zurich website, also accurate
 	All of the websites were accurate when it came to finding the city of hosting. 
-	b) One use case is for services to target info to people living in certain areas. There is no point in showing news articles about a city in China to someone living in North Dakota so being able to target the user with information that is closer (literally) to them is useful. The other is to track malicious users. If there is someone committing crimes on the internet then you can find where they are and respond with law enforcement. 
+	b) One use case is for services to target info to people living in certain areas. There is no point in showing news articles about a city in China to someone living in North Dakota so being able to target the user with information that is closer (literally) to them is useful. The other is to track malicious users. If there is someone committing crimes on the internet then you can find where they are and respond with law enforcement in that city. 
