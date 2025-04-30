@@ -37,6 +37,8 @@
 	b)
 		![[Pasted image 20250428133314.png]]
 		This is for KU. The first lease was replaced by the second entry when I forced my computer to renew the lease (I wasn't sure if I did it right). It is cool to see a history of the leases. The mask is /17 and The lease length is 8 mins which is not very long. The DHCP broadcast address is 10.109.127.255 which is the highest address for /17
+		![[Pasted image 20250429183249.png]]
+		This is at my apartment. The top one is ku (once again) and then the bottom one is my apartment. Here we can see that the duration for the lease at my house is a lot more than the one at my university. We can also see that my network is /24 which is different. An interesting aspect is that the DNS here is the same as the router which according to a google search means that the router will help fetch the IP address and then give it to the user.
 
 4. 
 	![[Pasted image 20250423140421.png]]
