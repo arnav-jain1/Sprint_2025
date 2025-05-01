@@ -1,9 +1,6 @@
 # ToDo
 
-- Study 558
-- Write for Dr. Guria
-- Finish self thing
-- Research for cs
+- Study 500
 - Research grad school
 - Grade 
 - Apply IB/finance
