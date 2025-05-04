@@ -44,5 +44,3 @@ Zurich
 5ab 4/4:
 addl2 4/4:
 5.1.4b 4/4:
-
-![[Pasted image 20250504140201.png]]
