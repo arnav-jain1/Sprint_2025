@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "temp.md",
+                "file": "comms/hw/hw8.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "temp"
+              "title": "hw8"
             }
           }
         ]
@@ -165,19 +165,21 @@
   },
   "active": "f06aee47b0ae48eb",
   "lastOpenFiles": [
-    "Pasted image 20250504140201.png",
+    "comms/hw/hw8.pdf",
+    "comms/hw/Pasted image 20250505201207.png",
+    "comms/hw/Pasted image 20250505200858.png",
+    "comms/hw/Pasted image 20250505200708.png",
+    "comms/hw/Pasted image 20250505195322.png",
+    "comms/hw/Pasted image 20250505195301.png",
+    "comms/hw/Pasted image 20250505195034.png",
+    "comms/hw/Pasted image 20250505194026.png",
+    "comms/hw/Pasted image 20250505193522.png",
+    "comms/hw/Pasted image 20250505193432.png",
+    "comms/hw/Pasted image 20250505192719.png",
     "temp.md",
+    "comms/hw/hw8.md",
     "comms/hw/hw7.md",
     "comms/hw/hw7.pdf",
-    "comms/hw/Pasted image 20250429183249.png",
-    "comms/hw/Pasted image 20250429150407.png",
-    "comms/hw/Pasted image 20250429150042.png",
-    "comms/hw/Pasted image 20250429145316.png",
-    "comms/hw/Pasted image 20250429145049.png",
-    "comms/hw/Pasted image 20250429145024.png",
-    "comms/hw/Pasted image 20250429144706.png",
-    "comms/hw/Pasted image 20250429144626.png",
-    "comms/hw/Pasted image 20250429141809.png",
     "pl/hw/hw4.md",
     "pl/hw4.pdf",
     "pl/hw/hw4.pdf",
@@ -208,7 +210,6 @@
     "arch/! practice.md",
     "comms/hw/hw3.md",
     "arch/Lec 3.md",
-    "arch/Lec 4.md",
-    "arch/Lec 6-7.md"
+    "arch/Lec 4.md"
   ]
 }
