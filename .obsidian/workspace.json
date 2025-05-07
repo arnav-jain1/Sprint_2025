@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pl/hw/hw5.md",
+                "file": "pl/hw/hw4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hw5"
+              "title": "hw4"
             }
           }
         ]
@@ -165,8 +165,9 @@
   },
   "active": "f06aee47b0ae48eb",
   "lastOpenFiles": [
-    "comms/hw/hw8.md",
+    "pl/Exam.md",
     "pl/hw/hw5.md",
+    "comms/hw/hw8.md",
     "comms/hw/hw8.pdf",
     "comms/hw/Pasted image 20250505201207.png",
     "comms/hw/Pasted image 20250505200858.png",
@@ -209,7 +210,6 @@
     "comms/Chapter 1.md",
     "arch/! practice.md",
     "comms/hw/hw3.md",
-    "arch/Lec 3.md",
-    "arch/Lec 4.md"
+    "arch/Lec 3.md"
   ]
 }
