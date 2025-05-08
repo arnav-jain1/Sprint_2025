@@ -77,9 +77,10 @@ Case 3: EProj
 		$\equiv t'.2$  
 	This satisfies EProj
 Case 4: TPair
-	For neatness sake, I will remove typing.  Assume $l : T_{1}, r : T_{2} \text{ and } c: Bool$ 
-	Also assume that $l$ and $r$ are values and .1/.2 is instead True or False respectively in accordance with the inference rules then
+	Assume $\Gamma \vdash t_{1} : T_{1}$ and $\Gamma \vdash t_{2} : T_{2}$ 
 	PairLeft
-		$\{v_{1}, v_{2}\}: T_{1} \times T_{2} .1  \equiv$ 
-		$\lambda c. True \ l\ r \Rightarrow \text{ True } l \ r \Rightarrow \lambda x.\lambda y. x \ l \ r \Rightarrow l$      
-		Since $l: T_{1}$ (stated when removing types for simplicity) $l : T_{1}$ which follows the inference rule  of PairLeft and TProj1
+		Then let $l \equiv t_{1}$ and $r \equiv t_{2}$
+		Then $\lambda c : Bool . c \ l \ r \equiv {\Gamma\vdash\langle t_{1},t_{2}\rangle : T_{1}\times T_{2}}$ 
+		Another way to look at it, when building the pair:
+		$\lambda l: T_{1}. \lambda r: T_{2}. \lambda c : Bool . c \ l \ r \equiv {\Gamma\vdash\langle t_{1},t_{2}\rangle : T_{1}\times T_{2}}$ 
+	So TPair is represented as well
