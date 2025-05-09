@@ -38,22 +38,25 @@ $$
 {\,\Gamma\vdash t.2 : T_{2}\;}\quad(\mathrm{TProj2})
 $$
 1. 
+
+$\{t_1, t_2\}: T_1 \times T_2 \equiv \lambda c. c\ t_{1}\ t_{2}$ 
+$\{t_1, t_2\}.1: T_1 \equiv \lambda c. c\ t_{1}\ t_{2} \ true$  
+$\{t_1, t_2\}.2: T_1 \equiv \lambda c. c\ t_{1}\ t_{2} \ false$  
+
+
 2. Proof by induction:
 Case 1: Pair
-	For neatness sake, I will remove typing.  Assume $l : T_{1}, r : T_{2} \text{ and } c: Bool$ 
-	Also assume that $l$ and $r$ are values and .1/.2 is instead True or False respectively in accordance with the inference rules then
+	Also assume that $l$ and $r$ are values corresponding to t1 and t2, .1/.2 is instead True or False respectively in accordance with the inference rules. Then
 	PairLeft
 		$\{v_{1}, v_{2}\}: T_{1} \times T_{2} .1  \equiv$ 
-		$\lambda c. True \ l\ r \Rightarrow \text{ True } l \ r \Rightarrow \lambda x.\lambda y. x \ l \ r \Rightarrow l$      
-		Since $l: T_{1}$ (stated when removing types for simplicity) $l : T_{1}$ which follows the inference rule  of PairLeft and TProj1
+		$\lambda c. c \ l\ r \ True \ \Rightarrow \text{ True } l \ r \Rightarrow \lambda x.\lambda y. x \ l \ r \Rightarrow l$      
+		Since $l \equiv t_{1}$ (stated in assumptions), $l \equiv t_{1}$ so PairLeft holds
 	PairRight
 		$\{v_{1}, v_{2}\}: T_{1} \times T_{2} .2  \equiv$ 
-		$\lambda c. False \ l\ r \Rightarrow \text{ False } l \ r \Rightarrow \lambda x.\lambda y. y \ l \ r \Rightarrow r$      
-		Since $r: T_{2}$ (stated when removing types for simplicity) $r : T_{2}$ which follows the inference rule of PairRight and TProj2
-	This also satisfies TProj1/TProj2
+		$\lambda c. c \ l\ r \ False \ \Rightarrow \text{ False } l \ r \Rightarrow \lambda x.\lambda y. y \ l \ r \Rightarrow r$      
+		Since $r \equiv t_{2}$ (stated in assumptions), $r \equiv t_{2}$ so PairRight holds
 Case 2: EPair
 	Assumptions: $t_{1} \rightarrow t_{1}'$ (given, same for t2) and $l = t_{1}$ and $r = t_{2}$
-	For neatness sake, I will remove typing.  Let $l : T_{1}, r : T_{2} \text{ and } c: Bool$ 
 	EPairL
 		$\langle t_{1}, t_{2} \rangle \equiv$
 		$\lambda c. c \ l\ r = \lambda c. c \ t_{1} \ r \Rightarrow \lambda c. c \ t_{1}' \ r$  (by inductive hypothesis since we assume the rest is correct) 
@@ -76,11 +79,3 @@ Case 3: EProj
 		$\lambda t. t\ False= \lambda t. t' \ False$  (by inductive hypothesis since we assume the rest is correct) 
 		$\equiv t'.2$  
 	This satisfies EProj
-Case 4: TPair
-	Assume $\Gamma \vdash t_{1} : T_{1}$ and $\Gamma \vdash t_{2} : T_{2}$ 
-	PairLeft
-		Then let $l \equiv t_{1}$ and $r \equiv t_{2}$
-		Then $\lambda c : Bool . c \ l \ r \equiv {\Gamma\vdash\langle t_{1},t_{2}\rangle : T_{1}\times T_{2}}$ 
-		Another way to look at it, when building the pair:
-		$\lambda l: T_{1}. \lambda r: T_{2}. \lambda c : Bool . c \ l \ r \equiv {\Gamma\vdash\langle t_{1},t_{2}\rangle : T_{1}\times T_{2}}$ 
-	So TPair is represented as well

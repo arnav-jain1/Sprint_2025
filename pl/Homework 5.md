@@ -56,7 +56,7 @@ $$
 
 ## Derived Forms
 
-$\{t_1, t_2\}: T_1 \times T_2 \equiv (\lambda c: Bool. c\ (t_1: T_1)\ (t_2: T_2)): T_1 \times T_2$
+$\{t_1, t_2\}: T_1 \times T_2 \equiv (\lambda c: Bool. c\ t_{1}\ t_{2}): Bool \rightarrow T_1 \times T_2$ 
 
 $\{t_1, t_2\}.1: T_1 \equiv ((\lambda c: Bool. c\ (t_1: T_1)\ (t_2: T_2))\ (\lambda x: T_1.\lambda y: T_2. x): Bool): T_1$
 
