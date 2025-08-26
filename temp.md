@@ -7,7 +7,7 @@
 Prague
 	Aug 10: Reach
 	Aug 11
-	Aug 12: <mark style="background: #FF5582A6;">Kunta Hora vs Cesky Krumlov</mark>
+	Aug 12: Brno
 	Aug 13: Leave for Vienna
 Vienna
 	Aug 13: Reach Vienna
